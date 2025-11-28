@@ -228,6 +228,22 @@
         ]
     },
     {
+        "name": "Arjun",
+        "url": "https://github.com/s0md3v/Arjun",
+        "source": "https://github.com/s0md3v/Arjun",
+        "description": "Arjun can find HTTP query parameters for URL endpoints",
+        "techniques": [
+            "content_discovery",
+            "reconnaissance"
+        ],
+        "categories": [
+            "fuzzing"
+        ],
+        "targets": [
+            "web"
+        ]
+    },
+    {
         "name": "ARP Scan",
         "url": "https://github.com/royhills/arp-scan",
         "source": "https://github.com/royhills/arp-scan",
@@ -733,6 +749,40 @@
         ]
     },
     {
+        "name": "CORScanner",
+        "url": "https://github.com/chenjj/CORScanner",
+        "source": "https://github.com/chenjj/CORScanner",
+        "description": "CORScanner is a python tool designed to discover CORS misconfigurations vulnerabilities of websites. It helps website administrators and penetration testers to check whether the domains/urls they are targeting have insecure CORS policies.",
+        "techniques": [
+            "CORS",
+            "vulnerability_assessment"
+        ],
+        "categories": [
+            "misconfigs",
+            "vulnerability_scanner"
+        ],
+        "targets": [
+            "web"
+        ]
+    },
+    {
+        "name": "Corsy",
+        "url": "https://github.com/s0md3v/Corsy",
+        "source": "https://github.com/s0md3v/Corsy",
+        "description": "Corsy is a lightweight program that scans for all known misconfigurations in CORS implementations.",
+        "techniques": [
+            "CORS",
+            "vulnerability_assessment"
+        ],
+        "categories": [
+            "misconfigs",
+            "vulnerability_scanner"
+        ],
+        "targets": [
+            "web"
+        ]
+    },
+    {
         "name": "CrackStation",
         "url": "https://crackstation.net/",
         "source": "https://crackstation.net/",
@@ -812,13 +862,32 @@
         ]
     },
     {
+        "name": "Dalfox",
+        "url": "https://dalfox.hahwul.com/",
+        "source": "https://github.com/hahwul/dalfox",
+        "description": "Dalfox is a powerful open-source tool that focuses on automation, making it ideal for quickly scanning for XSS flaws and analyzing parameters. Its advanced testing engine and niche features are designed to streamline the process of detecting and verifying vulnerabilities.",
+        "techniques": [
+            "exploitation",
+            "vulnerability_assessment",
+            "XSS"
+        ],
+        "categories": [
+            "vulnerability_scanner"
+        ],
+        "targets": [
+            "network",
+            "web"
+        ]
+    },
+    {
         "name": "Damn Small SQLi Scanner",
         "url": "https://github.com/stamparm/DSSS",
         "source": "https://github.com/stamparm/DSSS",
         "description": "Damn Small SQLi Scanner (DSSS) is a fully functional SQL injection vulnerability scanner (supporting GET and POST parameters).",
         "techniques": [
             "exploitation",
-            "SQL_injection"
+            "SQL_injection",
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -1126,7 +1195,8 @@
             "enumeration",
             "exploitation",
             "reconnaissance",
-            "post_exploitation"
+            "post_exploitation",
+            "vulnerability_assessment"
         ],
         "categories": [
             "OSINT",
@@ -1358,7 +1428,7 @@
         ]
     },
     {
-        "name": "GetAllURLs",
+        "name": "GetAllURLs (GAU)",
         "url": "https://github.com/lc/gau",
         "source": "https://github.com/lc/gau",
         "description": "Getallurls (gau) fetches known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, Common Crawl, and URLScan for any given domain.",
@@ -1395,7 +1465,8 @@
         "description": "An advanced cross-platform tool that automates the process of detecting and exploiting SQL injection security flaws.",
         "techniques": [
             "exploitation",
-            "SQL_injection"
+            "SQL_injection",
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -1509,7 +1580,8 @@
         "techniques": [
             "reconnaissance",
             "enumeration",
-            "post_exploitation"
+            "post_exploitation",
+            "vulnerability_assessment"
         ],
         "categories": [
             "OSINT",
@@ -1780,7 +1852,7 @@
     },
     {
         "name": "HTTPX",
-        "url": "https://github.com/projectdiscovery/httpx",
+        "url": "https://projectdiscovery.io/",
         "source": "https://github.com/projectdiscovery/httpx",
         "description": "HTTPX is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library. It is designed to maintain result reliability with an increased number of threads.",
         "techniques": [
@@ -2094,27 +2166,7 @@
     },
     {
         "name": "Katana",
-        "url": "https://github.com/projectdiscovery/katana",
-        "source": "https://github.com/projectdiscovery/katana",
-        "description": "Katana is a powerful web crawler and content discovery tool that parses JavaScript files, sitemaps, and HTML to identify URLs, endpoints, and parameters for security testing.",
-        "techniques": [
-            "content_discovery",
-            "enumeration",
-            "reconnaissance"
-        ],
-        "categories": [
-            "crawler",
-            "fingerprinting",
-            "javascript",
-            "OSINT"
-        ],
-        "targets": [
-            "web"
-        ]
-    },
-    {
-        "name": "Katana",
-        "url": "https://github.com/projectdiscovery/katana",
+        "url": "https://projectdiscovery.io/",
         "source": "https://github.com/projectdiscovery/katana",
         "description": "Katana is a powerful web crawler and content discovery tool that parses JavaScript files, sitemaps, and HTML to identify URLs, endpoints, and parameters for security testing.",
         "techniques": [
@@ -2338,7 +2390,8 @@
         "description": "The LES tool is designed to assist in detecting security deficiencies in a given Linux kernel or Linux-based machine by assessing kernel exposure to publicly known exploits and verifying the state of kernel hardening security measures.",
         "techniques": [
             "exploitation",
-            "privilege_escalation"
+            "privilege_escalation",
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -2552,7 +2605,8 @@
         "source": "https://sourceforge.net/projects/themole/",
         "description": "Mole is an automatic SQL Injection exploitation tool. Only by providing a vulnerable URL and a valid string on the site it can detect the injection and exploit it, either by using the union technique or a boolean query based technique.",
         "techniques": [
-            "SQL_injection"
+            "SQL_injection",
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -2665,7 +2719,9 @@
         "url": "https://www.tenable.com/products/nessus",
         "source": "https://www.tenable.com/products/nessus",
         "description": "Nessus is a widely used vulnerability scanner developed by Tenable. It helps identify potential vulnerabilities, misconfigurations, and security issues in your systems, network devices, and web applications. It scans for a variety of known security flaws, including those related to software versions, missing patches, and weak configurations, to help organizations improve their security posture.",
-        "techniques": [],
+        "techniques": [
+            "vulnerability_assessment"
+        ],
         "categories": [
             "misconfigs",
             "vulnerability_scanner"
@@ -2720,7 +2776,7 @@
         "source": "https://github.com/sullo/nikto",
         "description": "Nikto is an Open Source web server scanner which performs comprehensive tests against web servers for multiple items, including over 7,000 potentially dangerous files/programs, checks for outdated versions of over 1250 servers, and version specific problems on over 270 servers. It also checks for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software.",
         "techniques": [
-            "reconnaissance"
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -2788,7 +2844,8 @@
         "description": "NoSQLMap is an open source Python tool designed to audit for as well as automate injection attacks and exploit default configuration weaknesses in NoSQL databases and web applications using NoSQL in order to disclose or clone data from the database.",
         "techniques": [
             "exploitation",
-            "SQL_injection"
+            "SQL_injection",
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -2813,6 +2870,22 @@
         ],
         "targets": [
             "network"
+        ]
+    },
+    {
+        "name": "Nuclei",
+        "url": "https://projectdiscovery.io/",
+        "source": "https://github.com/projectdiscovery/nuclei",
+        "description": "Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.",
+        "techniques": [
+            "vulnerability_assessment"
+        ],
+        "categories": [
+            "vulnerability_scanner"
+        ],
+        "targets": [
+            "network",
+            "web"
         ]
     },
     {
@@ -2855,7 +2928,9 @@
         "url": "https://openvas.org/",
         "source": "https://github.com/greenbone/openvas-scanner",
         "description": "OpenVAS is a full-featured vulnerability scanner. Its capabilities include unauthenticated and authenticated testing, various high-level and low-level internet and industrial protocols, performance tuning for large-scale scans and a powerful internal programming language to implement any type of vulnerability test.",
-        "techniques": [],
+        "techniques": [
+            "vulnerability_assessment"
+        ],
         "categories": [
             "network_scanner",
             "vulnerability_scanner"
@@ -2989,11 +3064,11 @@
         "source": "https://github.com/kaanatmacaa/pdf-injection",
         "description": "Tool to create XSS PDF files.",
         "techniques": [
-            "exploitation",
             "XSS"
         ],
         "categories": [
-            "payload"
+            "payload",
+            "polyglot"
         ],
         "targets": [
             "files",
@@ -3108,6 +3183,7 @@
         "categories": [
             "crawler",
             "OSINT",
+            "web_archive",
             "website_mirroring"
         ],
         "targets": [
@@ -3246,7 +3322,8 @@
         "description": "ReconFTW is a tool designed to perform automated recon on a target domain by running the best set of tools to perform scanning and finding out vulnerabilities. It also performs various vulnerability checks like XSS, Open Redirects, SSRF, CRLF, LFI, SQLi, SSL tests, SSTI, DNS zone transfers, and much more. Along with these, it performs OSINT techniques, directory fuzzing, dorking, ports scanning, screenshots, nuclei scan on your target.",
         "techniques": [
             "enumeration",
-            "reconnaissance"
+            "reconnaissance",
+            "vulnerability_assessment"
         ],
         "categories": [
             "fuzzing",
@@ -3416,7 +3493,8 @@
             "enumeration",
             "exploitation",
             "post_exploitation",
-            "reconnaissance"
+            "reconnaissance",
+            "vulnerability_assessment"
         ],
         "categories": [
             "OSINT",
@@ -3549,7 +3627,9 @@
         "url": "https://www.kali.org/tools/skipfish/",
         "source": "https://www.kali.org/tools/skipfish/",
         "description": "Skipfish is a web application security scanner developed by Google. It crawls and audits websites, looking for a wide range of vulnerabilities through active probing and fuzzing.",
-        "techniques": [],
+        "techniques": [
+            "vulnerability_assessment"
+        ],
         "categories": [
             "fingerprinting",
             "vulnerability_scanner"
@@ -3577,7 +3657,9 @@
         "url": "https://www.thesmartscanner.com/",
         "source": "https://www.thesmartscanner.com/",
         "description": "SmartScanner is an AI-powered web vulnerability scanner designed to enhance web application security testing. It automates the detection of various vulnerabilities, including those listed in the OWASP Top 10, such as SQL Injection (SQLi) and Cross-Site Scripting (XSS).",
-        "techniques": [],
+        "techniques": [
+            "vulnerability_assessment"
+        ],
         "categories": [
             "vulnerability_scanner"
         ],
@@ -3592,7 +3674,8 @@
         "source": "https://github.com/defparam/smuggler",
         "description": "An HTTP Request Smuggling / Desync testing tool written in Python 3.",
         "techniques": [
-            "HTTP_smuggling"
+            "HTTP_smuggling",
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -3626,7 +3709,8 @@
         "description": "Sn1per is an automated penetration testing tool for reconnaissance, vulnerability scanning, and web security assessment. It gathers subdomains, WHOIS data, DNS details, and other OSINT while scanning for vulnerabilities using tools like Nmap, Nikto, and OpenVAS. It detects web application threats such as SQL injection and XSS, performs brute-force attacks on SSH and FTP, and identifies open ports and running services.",
         "techniques": [
             "enumeration",
-            "reconnaissance"
+            "reconnaissance",
+            "vulnerability_assessment"
         ],
         "categories": [
             "network_scanner",
@@ -3723,6 +3807,23 @@
         ]
     },
     {
+        "name": "SpoofCheck",
+        "url": "https://github.com/a6avind/spoofcheck",
+        "source": "https://github.com/a6avind/spoofcheck",
+        "description": "A Python tool to check if a domain can be spoofed by analyzing its SPF and DMARC records.",
+        "techniques": [
+            "spoofing"
+        ],
+        "categories": [
+            "misconfigs",
+            "email"
+        ],
+        "targets": [
+            "network",
+            "web"
+        ]
+    },
+    {
         "name": "Spray365",
         "url": "https://github.com/MarkoH17/Spray365",
         "source": "https://github.com/MarkoH17/Spray365",
@@ -3741,7 +3842,8 @@
         "source": "https://github.com/americo/sqlifinder",
         "description": "Sqlifinder is a tool with the function of detecting GET-based sql injection vulnerabilities in web applications using waybackurls, web crawlers and sql injection payloads.",
         "techniques": [
-            "SQL_injection"
+            "SQL_injection",
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -3759,7 +3861,8 @@
         "description": "sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.",
         "techniques": [
             "exploitation",
-            "SQL_injection"
+            "SQL_injection",
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -3866,7 +3969,8 @@
         "description": "Stratus Red Team is 'Atomic Red Team' for the cloud, allowing to emulate offensive attack techniques in a granular and self-contained manner.",
         "techniques": [
             "enumeration",
-            "exploitation"
+            "exploitation",
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -3891,6 +3995,22 @@
         ],
         "targets": [
             "network",
+            "web"
+        ]
+    },
+    {
+        "name": "Subjs",
+        "url": "https://github.com/lc/subjs",
+        "source": "https://github.com/lc/subjs",
+        "description": "Fetches javascript file from a list of URLS or subdomains.",
+        "techniques": [
+            "reconnaissance"
+        ],
+        "categories": [
+            "javascript",
+            "OSINT"
+        ],
+        "targets": [
             "web"
         ]
     },
@@ -4069,9 +4189,7 @@
         "techniques": [
             "forensics"
         ],
-        "categories": [
-            "vulnerability_scanner"
-        ],
+        "categories": [],
         "targets": [
             "cloud",
             "linux"
@@ -4100,7 +4218,9 @@
         "url": "https://trivy.dev/",
         "source": "https://github.com/aquasecurity/trivy",
         "description": "Trivy is a comprehensive and versatile security scanner that analyzes a variety of targets—including container images, filesystems, remote Git repositories, virtual machine images, and Kubernetes environments—to identify potential security issues. It employs multiple scanners to detect OS packages and software dependencies (SBOM), known vulnerabilities (CVEs), infrastructure-as-code (IaC) misconfigurations, sensitive information and secrets, and software license details.",
-        "techniques": [],
+        "techniques": [
+            "vulnerability_assessment"
+        ],
         "categories": [
             "vulnerability_scanner"
         ],
@@ -4146,7 +4266,7 @@
         "source": "https://sourceforge.net/projects/uniscan/",
         "description": "Uniscan is a simple Remote File Include, Local File Include and Remote Command Execution vulnerability scanner.",
         "techniques": [
-            "reconnaissance"
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -4233,7 +4353,8 @@
         "source": "https://vulners.com/",
         "description": "Vulners is an API-first vulnerability intelligence platform that aggregates data from over 200 diverse sources, including CVE databases, exploit repositories, vendor advisories, and bug bounty reports.",
         "techniques": [
-            "reconnaissance"
+            "reconnaissance",
+            "vulnerability_assessment"
         ],
         "categories": [
             "OSINT",
@@ -4250,6 +4371,7 @@
         "techniques": [
             "exploitation",
             "SQL_injection",
+            "vulnerability_assessment",
             "XSS"
         ],
         "categories": [
@@ -4282,7 +4404,9 @@
         "url": "https://wapiti-scanner.github.io/",
         "source": "https://github.com/wapiti-scanner/wapiti",
         "description": "Wapiti is an open-source web vulnerability scanner that audits web application security through black-box testing. It scans by crawling web pages and injecting payloads to detect vulnerabilities. After gathering URLs, forms, and inputs, Wapiti acts as a fuzzer, injecting payloads to test for vulnerabilities such as SQL Injection (SQLi), Cross-Site Scripting (XSS), File Inclusion, Command Execution, and SSRF.",
-        "techniques": [],
+        "techniques": [
+            "vulnerability_assessment"
+        ],
         "categories": [
             "fuzzing",
             "vulnerability_scanner"
@@ -4406,7 +4530,8 @@
         "description": "WES-NG (Windows Exploit Suggester - Next Generation) is a tool based on the output of Windows' systeminfo utility which provides the list of vulnerabilities the OS is vulnerable to, including any exploits for these vulnerabilities. Every Windows OS between Windows XP and Windows 11, including their Windows Server counterparts, is supported.",
         "techniques": [
             "exploitation",
-            "privilege_escalation"
+            "privilege_escalation",
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
@@ -4460,6 +4585,22 @@
         ],
         "targets": [
             "network"
+        ]
+    },
+    {
+        "name": "WhatWaf",
+        "url": "https://github.com/Ekultek/WhatWaf",
+        "source": "https://github.com/Ekultek/WhatWaf",
+        "description": "Detect and bypass web application firewalls and protection systems.",
+        "techniques": [
+            "reconnaissance"
+        ],
+        "categories": [
+            "bypass",
+            "WAF_detection"
+        ],
+        "targets": [
+            "web"
         ]
     },
     {
@@ -4593,13 +4734,30 @@
         "source": "https://github.com/wpscanteam/wpscan/",
         "description": "WPScan WordPress security scanner. Written for security professionals and blog maintainers to test the security of their WordPress websites.",
         "techniques": [
-            "reconnaissance"
+            "vulnerability_assessment"
         ],
         "categories": [
             "vulnerability_scanner"
         ],
         "targets": [
             "network",
+            "web"
+        ]
+    },
+    {
+        "name": "xnLinkFinder",
+        "url": "https://github.com/xnl-h4ck3r/xnLinkFinder",
+        "source": "https://github.com/xnl-h4ck3r/xnLinkFinder",
+        "description": "A python tool used to discover endpoints, potential parameters, and a target specific wordlist for a given target.",
+        "techniques": [
+            "content_discovery",
+            "enumeration",
+            "reconnaissance"
+        ],
+        "categories": [
+            "OSINT"
+        ],
+        "targets": [
             "web"
         ]
     },
@@ -4610,13 +4768,30 @@
         "description": "Cross-Site Scripter (aka XSSer) is an automated penetration testing tool designed to detect, exploit, and report Cross-Site Scripting (XSS) vulnerabilities in web applications. It supports automated scanning for XSS vulnerabilities, multiple types of XSS attacks, the ability to generate and obfuscate payloads, and integration with Tor for anonymous testing.",
         "techniques": [
             "exploitation",
+            "vulnerability_assessment",
             "XSS"
         ],
         "categories": [
             "vulnerability_scanner"
         ],
         "targets": [
-            "network",
+            "web"
+        ]
+    },
+    {
+        "name": "XSStrike",
+        "url": "https://github.com/s0md3v/XSStrike",
+        "source": "https://github.com/s0md3v/XSStrike",
+        "description": "XSStrike is a Cross Site Scripting detection suite equipped with four hand written parsers, an intelligent payload generator, a powerful fuzzing engine and an incredibly fast crawler.",
+        "techniques": [
+            "exploitation",
+            "vulnerability_assessment",
+            "XSS"
+        ],
+        "categories": [
+            "vulnerability_scanner"
+        ],
+        "targets": [
             "web"
         ]
     },
@@ -4626,7 +4801,8 @@
         "source": "https://github.com/zaproxy",
         "description": "ZAP (Zed Attack Proxy), or ZAP Proxy, is an open-source security tool used to identify vulnerabilities in web applications. It is developed and maintained by the OWASP community. ZAP is used for web application security testing, API penetration testing, and automated vulnerability scanning.",
         "techniques": [
-            "HTTP_tampering"
+            "HTTP_tampering",
+            "vulnerability_assessment"
         ],
         "categories": [
             "fuzzing",

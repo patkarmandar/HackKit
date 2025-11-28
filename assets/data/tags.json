@@ -1,5 +1,6 @@
 {
     "techniques": [
+        "CORS",
         "content_discovery",
         "cryptography",
         "directory_traversal",
@@ -25,6 +26,7 @@
         "spoofing",
         "SQL_injection",
         "steganography",
+        "vulnerability_assessment",
         "XSS"
     ],
     "categories": [
@@ -39,6 +41,7 @@
         "credential_dumping",
         "dark_web",
         "dorks",
+        "email",
         "evasion",
         "exfiltration",
         "extension",

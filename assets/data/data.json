@@ -791,7 +791,7 @@
             "password_attack"
         ],
         "categories": [
-            "hash_cracker",
+            "hash",
             "web_app"
         ],
         "targets": []
@@ -897,6 +897,20 @@
             "network",
             "web"
         ]
+    },
+    {
+        "name": "dCode's Tools List",
+        "url": "https://www.dcode.fr/tools-list",
+        "source": "https://www.dcode.fr/tools-list",
+        "description": "dCode.fr is a collection of over 900 tools to help solve games, riddles, ciphers, mathematics, puzzles, etc.",
+        "techniques": [
+            "cryptography"
+        ],
+        "categories": [
+            "hash",
+            "web_app"
+        ],
+        "targets": []
     },
     {
         "name": "DeepFind.Me",
@@ -1685,7 +1699,9 @@
         "techniques": [
             "password_attack"
         ],
-        "categories": [],
+        "categories": [
+            "hash"
+        ],
         "targets": []
     },
     {
@@ -1694,10 +1710,25 @@
         "source": "https://github.com/hashcat/hashcat",
         "description": "Hashcat is the world's fastest and most advanced password recovery utility, supporting five unique attack modes and over 300 highly optimized hashing algorithms. It runs on CPUs, GPUs, and other hardware accelerators across Linux, Windows, and macOS and includes features for distributed password cracking. Hashcat uses brute force, dictionary attacks, rule-based attacks, and GPU acceleration to crack hashes efficiently. It supports a wide range of hashing algorithms, including MD5, SHA-256, NTLM, WPA/WPA2, bcrypt, and more.",
         "techniques": [
+            "cryptography",
             "password_attack"
         ],
         "categories": [
-            "hash_cracker"
+            "hash"
+        ],
+        "targets": []
+    },
+    {
+        "name": "Hashes",
+        "url": "https://hashes.com/",
+        "source": "https://hashes.com/",
+        "description": "Decrypt MD5, SHA1, MySQL, NTLM, SHA256, MD5 Email, SHA256 Email, SHA512 hashes",
+        "techniques": [
+            "cryptography"
+        ],
+        "categories": [
+            "hash",
+            "web_app"
         ],
         "targets": []
     },
@@ -2055,7 +2086,7 @@
             "password_attack"
         ],
         "categories": [
-            "hash_cracker"
+            "hash"
         ],
         "targets": []
     },
@@ -2087,6 +2118,21 @@
         "categories": [
             "javascript",
             "OSINT"
+        ],
+        "targets": [
+            "web"
+        ]
+    },
+    {
+        "name": "JSONLint",
+        "url": "https://jsonlint.com/",
+        "source": "https://github.com/circlecell/jsonlint",
+        "description": "JSONLint is your go-to online solution for JSON validation, formatting, and conversion. Whether you're debugging APIs, transforming data formats, or generating code from JSON schemas, JSONLint has you covered.",
+        "techniques": [],
+        "categories": [
+            "JSON",
+            "JWT",
+            "web_app"
         ],
         "targets": [
             "web"
@@ -2295,7 +2341,7 @@
         ],
         "categories": [
             "credential_dumping",
-            "hash_cracker"
+            "hash"
         ],
         "targets": []
     },
@@ -2708,7 +2754,7 @@
             "password_attack"
         ],
         "categories": [
-            "hash_cracker"
+            "hash"
         ],
         "targets": [
             "network"
@@ -2950,7 +2996,7 @@
         ],
         "categories": [
             "credential_dumping",
-            "hash_cracker"
+            "hash"
         ],
         "targets": [
             "windows"

@@ -1692,6 +1692,25 @@
         ]
     },
     {
+        "name": "HardwareAllTheThings",
+        "url": "https://swisskyrepo.github.io/HardwareAllTheThings/",
+        "source": "https://github.com/swisskyrepo/HardwareAllTheThings",
+        "description": "Hardware/IOT Pentesting Wiki - a curated collection of valuable payloads and bypass techniques tailored for Hardware and IoT Security",
+        "techniques": [
+            "exploitation",
+            "malware_analysis"
+        ],
+        "categories": [
+            "payload",
+            "web_app",
+            "wordlists"
+        ],
+        "targets": [
+            "hardware",
+            "IoT"
+        ]
+    },
+    {
         "name": "Hash-identifier",
         "url": "https://github.com/blackploit/hash-identifier",
         "source": "https://github.com/blackploit/hash-identifier",
@@ -2039,6 +2058,28 @@
         ],
         "targets": [
             "people",
+            "web"
+        ]
+    },
+    {
+        "name": "InternalAllTheThings",
+        "url": "https://swisskyrepo.github.io/InternalAllTheThings/",
+        "source": "https://github.com/swisskyrepo/InternalAllTheThings",
+        "description": "Active Directory and Internal Pentest Cheatsheets",
+        "techniques": [
+            "exploitation",
+            "malware_analysis"
+        ],
+        "categories": [
+            "active_directory",
+            "payload",
+            "web_app",
+            "wordlists"
+        ],
+        "targets": [
+            "cloud",
+            "database",
+            "network",
             "web"
         ]
     },
@@ -3073,6 +3114,24 @@
         ]
     },
     {
+        "name": "PayloadsAllTheThings",
+        "url": "https://swisskyrepo.github.io/PayloadsAllTheThings/",
+        "source": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+        "description": "A list of useful payloads and bypass for Web Application Security and Pentest/CTF",
+        "techniques": [
+            "exploitation",
+            "malware_analysis"
+        ],
+        "categories": [
+            "payload",
+            "web_app",
+            "wordlists"
+        ],
+        "targets": [
+            "web"
+        ]
+    },
+    {
         "name": "Payload Box",
         "url": "https://github.com/payloadbox",
         "source": "https://github.com/payloadbox",
@@ -3553,12 +3612,17 @@
         "url": "https://www.exploit-db.com/searchsploit",
         "source": "https://gitlab.com/exploit-database/exploitdb",
         "description": "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.",
-        "techniques": [],
+        "techniques": [
+            "exploitation"
+        ],
         "categories": [
             "fuzzing",
+            "payload",
             "wordlists"
         ],
-        "targets": []
+        "targets": [
+            "web"
+        ]
     },
     {
         "name": "SecretFinder",

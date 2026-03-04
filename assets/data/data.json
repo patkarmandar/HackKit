@@ -31,6 +31,21 @@
         ]
     },
     {
+        "name": "AAPT",
+        "url": "https://developer.android.com/tools/aapt2",
+        "source": "https://maven.google.com/",
+        "description": "AAPT2 (Android Asset Packaging Tool) is a build tool that Android Studio and Android Gradle Plugin use to compile and package your app's resources. AAPT2 parses, indexes, and compiles the resources into a binary format that is optimized for the Android platform.",
+        "techniques": [
+            "reverse_engineering"
+        ],
+        "categories": [
+            "APK_analyzer"
+        ],
+        "targets": [
+            "android"
+        ]
+    },
+    {
         "name": "AdminPBuster",
         "url": "https://github.com/blackhatethicalhacking/AdminPBuster",
         "source": "https://github.com/blackhatethicalhacking/AdminPBuster",
@@ -191,7 +206,8 @@
             "reverse_engineering"
         ],
         "categories": [
-            "APK_analyzer"
+            "APK_analyzer",
+            "SAST"
         ],
         "targets": [
             "android"
@@ -208,7 +224,9 @@
             "reverse_engineering"
         ],
         "categories": [
-            "APK_analyzer"
+            "APK_analyzer",
+            "SAST",
+            "source_code"
         ],
         "targets": [
             "android"
@@ -899,6 +917,17 @@
         ]
     },
     {
+        "name": "DB Browser SQLite",
+        "url": "https://sqlitebrowser.org/",
+        "source": "https://github.com/sqlitebrowser/sqlitebrowser",
+        "description": "DB Browser for SQLite (DB4S) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.",
+        "techniques": [],
+        "categories": [],
+        "targets": [
+            "database"
+        ]
+    },
+    {
         "name": "dCode's Tools List",
         "url": "https://www.dcode.fr/tools-list",
         "source": "https://www.dcode.fr/tools-list",
@@ -1039,7 +1068,7 @@
         "name": "DNSDumpster.com",
         "url": "https://dnsdumpster.com/",
         "source": "https://dnsdumpster.com/",
-        "description": "A free online DNS reconnaissance and research tool that helps gather information about a domain\u2019s infrastructure. It is used for network reconnaissance, including subdomain enumeration, DNS records lookup, IP and host mapping, reverse DNS lookup, geolocation, and WHOIS data.",
+        "description": "A free online DNS reconnaissance and research tool that helps gather information about a domain’s infrastructure. It is used for network reconnaissance, including subdomain enumeration, DNS records lookup, IP and host mapping, reverse DNS lookup, geolocation, and WHOIS data.",
         "techniques": [
             "footprinting",
             "reconnaissance"
@@ -1102,14 +1131,15 @@
     },
     {
         "name": "Drozer",
-        "url": "https://labs.withsecure.com/tools/drozer",
-        "source": "https://github.com/WithSecureLabs/drozer",
+        "url": "https://labs.reversec.com/tools/drozer",
+        "source": "https://github.com/ReversecLabs/drozer",
         "description": "Drozer is an open-source security assessment framework for the Android platform. It helps identify vulnerabilities in apps and devices by interacting with the Android Runtime, other apps' IPC endpoints, and the underlying operating system. Drozer also provides tools to analyze and utilize public Android exploits. It can perform actions similar to an installed application, such as leveraging Android’s Inter-Process Communication (IPC) mechanism. Its key features include Application Attack Surface Analysis, Privilege Escalation, Exploit Misconfigurations, Reverse Engineering, and Remote Exploitation.",
         "techniques": [
             "reverse_engineering"
         ],
         "categories": [
-            "APK_analyzer"
+            "APK_analyzer",
+            "DAST"
         ],
         "targets": [
             "android"
@@ -1381,6 +1411,7 @@
         ],
         "categories": [
             "APK_analyzer",
+            "DAST",
             "root"
         ],
         "targets": [
@@ -1688,6 +1719,28 @@
             "reverse_shell"
         ],
         "targets": [
+            "web"
+        ]
+    },
+    {
+        "name": "Hardenize",
+        "url": "https://www.hardenize.com/",
+        "source": "https://www.hardenize.com/",
+        "description": "Automated Discovery and Monitoring of Entire Network Perimeter.",
+        "techniques": [
+            "enumeration",
+            "reconnaissance",
+            "vulnerability_assessment"
+        ],
+        "categories": [
+            "email",
+            "fingerprinting",
+            "misconfigs",
+            "vulnerability_scanner",
+            "web_app"
+        ],
+        "targets": [
+            "network",
             "web"
         ]
     },
@@ -2116,6 +2169,24 @@
         ],
         "targets": [
             "IoT"
+        ]
+    },
+    {
+        "name": "JADX",
+        "url": "https://github.com/skylot/jadx",
+        "source": "https://github.com/skylot/jadx",
+        "description": "JADX - Dex to Java decompiler, Command line and GUI tools for producing Java source code from Android Dex and Apk files.",
+        "techniques": [
+            "malware_analysis",
+            "reverse_engineering"
+        ],
+        "categories": [
+            "APK_analyzer",
+            "SAST",
+            "source_code"
+        ],
+        "targets": [
+            "android"
         ]
     },
     {
@@ -2670,14 +2741,16 @@
     },
     {
         "name": "MobSF",
-        "url": "https://opensecurity.in/",
+        "url": "https://mobsf.live/",
         "source": "https://github.com/MobSF/Mobile-Security-Framework-MobSF",
-        "description": "Mobile Security Framework (MobSF) is an automated, all-in-one platform for mobile application (Android, iOS, Windows) security assessment, penetration testing, malware analysis, and privacy analysis. It supports both static and dynamic analysis, processing popular app binaries like APK, IPA, and APPX, as well as source code. The Dynamic Analyzer enables interactive instrumented testing, runtime data monitoring, and network traffic analysis for Android and iOS applications. MobSF also integrates seamlessly with DevSecOps and CI/CD pipelines via REST APIs and CLI tools, enhancing security workflows efficiently.",
+        "description": "Mobile Security Framework (MobSF) is an automated, all-in-one platform for mobile application (Android, iOS, Windows) security assessment, penetration testing, malware analysis, and privacy analysis. It supports both static and dynamic analysis, processing popular app binaries like APK, IPA, and APPX, as well as source code. The Dynamic Analyzer enables interactive instrumented testing, runtime data monitoring, and network traffic analysis for Android and iOS applications.",
         "techniques": [
             "malware_analysis"
         ],
         "categories": [
-            "APK_analyzer"
+            "APK_analyzer",
+            "SAST",
+            "web_app"
         ],
         "targets": [
             "android",
@@ -2986,7 +3059,8 @@
             "malware_analysis"
         ],
         "categories": [
-            "credential_dumping"
+            "credential_dumping",
+            "DAST"
         ],
         "targets": [
             "android",
@@ -3512,6 +3586,22 @@
         ]
     },
     {
+        "name": "rootAVD",
+        "url": "https://gitlab.com/newbit/rootAVD",
+        "source": "https://gitlab.com/newbit/rootAVD",
+        "description": "Script to root AVDs running with QEMU Emulator from Android Studio.",
+        "techniques": [
+            "exploitation",
+            "privilege_escalation"
+        ],
+        "categories": [
+            "root"
+        ],
+        "targets": [
+            "android"
+        ]
+    },
+    {
         "name": "RouterSploit",
         "url": "https://github.com/threat9/routersploit",
         "source": "https://github.com/threat9/routersploit",
@@ -4002,17 +4092,18 @@
         ]
     },
     {
-        "name": "SSLTest",
-        "url": "https://www.ssllabs.com/ssltest/",
-        "source": "https://www.ssllabs.com/ssltest/",
-        "description": "This free online service performs a deep analysis of the configuration of any SSL web server on the public Internet.",
+        "name": "SSL Labs",
+        "url": "https://www.ssllabs.com/",
+        "source": "https://www.ssllabs.com/projects/documentation/",
+        "description": "SSL Labs is a collection of documents, tools and thoughts related to SSL.",
         "techniques": [
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
             "fingerprinting",
-            "SSL_check"
+            "SSL_check",
+            "web_app"
         ],
         "targets": [
             "network",

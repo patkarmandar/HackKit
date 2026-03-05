@@ -5,7 +5,7 @@
         "source": "https://github.com/Dheerajmadhukar/4-ZERO-3",
         "description": "403/401 Bypass Methods with Bash Automation.",
         "techniques": [
-            "content_discovery"
+            "exploitation"
         ],
         "categories": [
             "bypass"
@@ -51,10 +51,11 @@
         "source": "https://github.com/blackhatethicalhacking/AdminPBuster",
         "description": "AdminPBuster identifies hidden admin panels for any domain using a built-in wordlist that includes both common and obscure paths, effectively bypassing WAFs.",
         "techniques": [
-            "content_discovery",
             "reconnaissance"
         ],
-        "categories": [],
+        "categories": [
+            "content_discovery"
+        ],
         "targets": [
             "web"
         ]
@@ -65,10 +66,11 @@
         "source": "https://github.com/Ignitetch/AdvPhishing",
         "description": "AdvPhishing is an advanced phishing tool used for creating fake login pages to steal credentials. This tool generates realistic-looking login pages for various popular websites, such as Facebook, Instagram, Twitter, and Gmail, and captures the credentials entered by victims.",
         "techniques": [
-            "phishing",
             "social_engineering"
         ],
-        "categories": [],
+        "categories": [
+            "phishing"
+        ],
         "targets": [
             "people",
             "web"
@@ -80,8 +82,7 @@
         "source": "https://github.com/ahmia/ahmia-site",
         "description": "Ahmia is the search engine for .onion domains on the Tor anonymity network.",
         "techniques": [
-            "reconnaissance",
-            "footprinting"
+            "reconnaissance"
         ],
         "categories": [
             "dark_web",
@@ -113,10 +114,10 @@
         "source": "https://github.com/v1s1t0r1sh3r3/airgeddon",
         "description": "Airgeddon is a powerful, multi-functional Wi-Fi auditing tool designed for penetration testing and security assessments of wireless networks. It provides an automated framework to perform various attacks, including wireless network scanning, Evil Twin attacks (rogue AP), WPA/WPA2 handshake capture and cracking, WPS attacks using Reaver, Bully, and Pixie-Dust, Denial-of-Service (DoS) attacks, and Man-in-the-Middle (MITM) attacks. Additionally, it features an automated mode for easy execution, making it accessible for both beginners and advanced users in Wi-Fi security testing.",
         "techniques": [
-            "denial_of_service",
             "exploitation"
         ],
         "categories": [
+            "denial_of_service",
             "network_scanner",
             "rogue_access_point"
         ],
@@ -149,7 +150,7 @@
         "source": "https://github.com/androguard/androguard",
         "description": "Androguard is a comprehensive Python-based tool designed specifically for analyzing and reverse engineering Android application files. It is compatible exclusively with Python 3 and provides extensive support for working with various Android components. These include DEX and ODEX files, APK packages, Android’s binary XML format, and Android resource files. Androguard also enables disassembly of DEX/ODEX bytecode and includes a decompiler to convert these files into a more human-readable format, making it a powerful asset for security researchers and penetration testers.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "malware_analysis",
             "reverse_engineering"
         ],
@@ -166,14 +167,14 @@
         "source": "https://github.com/karma9874/AndroRAT",
         "description": "AndroRAT is an open-source remote access tool for Android devices, designed to remotely control an Android system and extract information from it. It operates as a client-server application. AndroRAT provides a fully persistent backdoor with an invisible icon upon installation and automatically starts on boot. It enables remote access via a command-and-control (C2) server, allowing data extraction such as contacts, call logs, messages, device location, and SIM card details. Additionally, it can manipulate SMS and calls, perform keylogging, track GPS location, and manage applications by installing or uninstalling them remotely. The tool also grants unauthorized access to the microphone and camera for recording audio, capturing photos, and recording videos, along with retrieving network details like IP and MAC addresses.",
         "techniques": [
-            "hijacking",
             "exploitation",
-            "post_exploitation",
-            "remote_code_execution"
+            "post_exploitation"
         ],
         "categories": [
             "credential_dumping",
-            "RAT"
+            "hijacking",
+            "RAT",
+            "remote_code_execution"
         ],
         "targets": [
             "android"
@@ -219,7 +220,7 @@
         "source": "https://github.com/iBotPeaches/Apktool",
         "description": "Apktool is a tool for reverse engineering third-party, closed, binary Android apps. It can decode resources to nearly their original form and rebuild them after modifications, enabling step-by-step debugging of smali code. It simplifies working with apps through a project-like file structure and automates repetitive tasks such as building APKs. It can disassemble, assemble, and analyze Android applications.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "malware_analysis",
             "reverse_engineering"
         ],
@@ -251,10 +252,10 @@
         "source": "https://github.com/s0md3v/Arjun",
         "description": "Arjun can find HTTP query parameters for URL endpoints",
         "techniques": [
-            "content_discovery",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "fuzzing"
         ],
         "targets": [
@@ -304,7 +305,7 @@
         "source": "https://www.sleuthkit.org/autopsy/",
         "description": "Autopsy is a free, open-source digital forensics tool that provides a user-friendly interface for analyzing hard drives, smartphones, and other digital evidence. Built on The Sleuth Kit, it helps investigators recover deleted files, analyze browser history, extract metadata, and create activity timelines, making it widely used in cybercrime investigations, law enforcement, and cybersecurity.",
         "techniques": [
-            "forensics"
+            "digital_forensics"
         ],
         "categories": [
             "OSINT"
@@ -353,7 +354,6 @@
             "social_engineering"
         ],
         "categories": [
-            "browser",
             "OSINT"
         ],
         "targets": [
@@ -385,16 +385,17 @@
         "techniques": [
             "enumeration",
             "exploitation",
-            "hijacking",
-            "reconnaissance",
-            "sniffing",
-            "spoofing"
+            "networking",
+            "reconnaissance"
         ],
         "categories": [
             "credential_dumping",
             "fuzzing",
+            "hijacking",
             "network_scanner",
-            "port_scanner"
+            "port_scanner",
+            "sniffing",
+            "spoofing"
         ],
         "targets": [
             "hardware",
@@ -409,7 +410,6 @@
         "source": "https://github.com/bahatiphill/BillCipher",
         "description": "Information gathering tool for websites and IP addresses. It retrieves data such as DNS records, WHOIS details, GeoIP, subnet information, port scanning results, page links, zone transfers, HTTP headers, host discovery, IP location, shared DNS records, robots.txt, reverse IP lookup, email discovery, subdomains, admin login detection, Cloudflare bypass techniques, website copying, and host details.",
         "techniques": [
-            "footprinting",
             "enumeration",
             "reconnaissance"
         ],
@@ -433,14 +433,12 @@
         "source": "https://github.com/ReFirmLabs/binwalk",
         "description": "Binwalk can identify, and optionally extract, files and data that have been embedded inside of other files. While its primary focus is firmware analysis, it supports a wide variety of file and data types.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "malware_analysis",
             "reverse_engineering",
             "steganography"
         ],
-        "categories": [
-            "exfiltration"
-        ],
+        "categories": [],
         "targets": [
             "files"
         ]
@@ -452,11 +450,11 @@
         "description": "BloodHound uses graph theory to reveal hidden and often unintended relationships within Active Directory, Entra ID (formerly Azure AD), and Microsoft Azure IaaS. Defenders (blue teams) and attackers (red teams) use BloodHound for a deeper understanding of privileged relationships in an environment.",
         "techniques": [
             "reconnaissance",
-            "post_exploitation",
-            "privilege_escalation"
+            "post_exploitation"
         ],
         "categories": [
-            "active_directory"
+            "active_directory",
+            "privilege_escalation"
         ],
         "targets": [
             "network",
@@ -469,7 +467,7 @@
         "source": "https://github.com/v1nc/Broken-Phone-Recovery",
         "description": "A guide how to backup data from your locked android phone if you broke your screen (and more)",
         "techniques": [
-            "forensics"
+            "digital_forensics"
         ],
         "categories": [],
         "targets": [
@@ -524,10 +522,10 @@
         "source": "https://dorks.faisalahmed.me/",
         "description": "Google Dorks",
         "techniques": [
-            "content_discovery",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "dorks",
             "OSINT",
             "search_engine",
@@ -543,10 +541,10 @@
         "source": "https://github.com/NitinYadav00/Bug-Bounty-Search-Engine",
         "description": "Search Engine For Bug Bounty Hunters",
         "techniques": [
-            "content_discovery",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "dorks",
             "OSINT",
             "search_engine",
@@ -562,10 +560,14 @@
         "source": "https://github.com/PortSwigger",
         "description": "Burp Suite is a Java-based web application vulnerability scanner and penetration testing framework, allowing for the interception and manipulation of HTTP/HTTPS traffic between a browser and server.",
         "techniques": [
-            "HTTP_tampering"
+            "enumeration",
+            "exploitation",
+            "reconnaissance",
+            "vulnerability_assessment"
         ],
         "categories": [
-            "fuzzing"
+            "fuzzing",
+            "HTTP_tampering"
         ],
         "targets": [
             "network",
@@ -593,10 +595,11 @@
         "source": "https://github.com/EntySec/CamOver",
         "description": "CamOver is a camera exploitation tool designed to disclose network camera admin passwords. It exploits vulnerabilities in popular camera models such as CCTV, GoAhead, and Netwave. The tool is optimized for efficiency, allowing users to target multiple cameras simultaneously using threading.",
         "techniques": [
-            "exploitation",
+            "exploitation"
+        ],
+        "categories": [
             "hijacking"
         ],
-        "categories": [],
         "targets": [
             "hardware",
             "network"
@@ -608,11 +611,13 @@
         "source": "https://github.com/techchipnet/CamPhish",
         "description": "CamPhish is a technique used to capture cam shots from a target's phone front camera or PC webcam. It hosts a fake website on an in-built PHP server and utilizes Ngrok and Cloudflare Tunnel to generate a shareable link, allowing access over the internet. When the target opens the link, the website requests camera permissions, and if granted, the tool captures cam shots from the target's device. Additionally, it can obtain GPS location data, all by simply sending a link.",
         "techniques": [
-            "hijacking",
-            "phishing",
+            "exploitation",
             "social_engineering"
         ],
-        "categories": [],
+        "categories": [
+            "hijacking",
+            "phishing"
+        ],
         "targets": [
             "people",
             "web"
@@ -756,7 +761,7 @@
         "source": "https://www.cgsecurity.org/wiki/CmosPwd",
         "description": "CmosPwd is an open-source tool used to decrypt, recover, or reset BIOS/CMOS passwords and reset BIOS settings on various computer systems. It can also back up, restore, and erase/kill CMOS.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "password_attack"
         ],
         "categories": [
@@ -772,10 +777,10 @@
         "source": "https://github.com/chenjj/CORScanner",
         "description": "CORScanner is a python tool designed to discover CORS misconfigurations vulnerabilities of websites. It helps website administrators and penetration testers to check whether the domains/urls they are targeting have insecure CORS policies.",
         "techniques": [
-            "CORS",
             "vulnerability_assessment"
         ],
         "categories": [
+            "CORS",
             "misconfigs",
             "vulnerability_scanner"
         ],
@@ -789,10 +794,10 @@
         "source": "https://github.com/s0md3v/Corsy",
         "description": "Corsy is a lightweight program that scans for all known misconfigurations in CORS implementations.",
         "techniques": [
-            "CORS",
             "vulnerability_assessment"
         ],
         "categories": [
+            "CORS",
             "misconfigs",
             "vulnerability_scanner"
         ],
@@ -837,10 +842,11 @@
         "description": "cURL (short for Client URL) is a command-line tool used to transfer data to or from a server using various protocols such as HTTP, HTTPS, and FTP; in cybersecurity, it is commonly used for reconnaissance, bypassing security controls, and testing web application endpoints.",
         "techniques": [
             "enumeration",
-            "HTTP_tampering",
+            "exploitation",
             "reconnaissance"
         ],
         "categories": [
+            "HTTP_tampering",
             "network_scanner",
             "WAF_detection",
             "website_mirroring"
@@ -857,7 +863,7 @@
         "description": "CyberChef is a simple, intuitive web app for carrying out all manner of \"cyber\" operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.",
         "techniques": [
             "cryptography",
-            "forensics",
+            "digital_forensics",
             "steganography"
         ],
         "categories": [
@@ -886,11 +892,11 @@
         "description": "Dalfox is a powerful open-source tool that focuses on automation, making it ideal for quickly scanning for XSS flaws and analyzing parameters. Its advanced testing engine and niche features are designed to streamline the process of detecting and verifying vulnerabilities.",
         "techniques": [
             "exploitation",
-            "vulnerability_assessment",
-            "XSS"
+            "vulnerability_assessment"
         ],
         "categories": [
-            "vulnerability_scanner"
+            "vulnerability_scanner",
+            "XSS"
         ],
         "targets": [
             "network",
@@ -904,10 +910,10 @@
         "description": "Damn Small SQLi Scanner (DSSS) is a fully functional SQL injection vulnerability scanner (supporting GET and POST parameters).",
         "techniques": [
             "exploitation",
-            "SQL_injection",
             "vulnerability_assessment"
         ],
         "categories": [
+            "SQL_injection",
             "vulnerability_scanner"
         ],
         "targets": [
@@ -948,8 +954,7 @@
         "description": "Depix is a PoC for a technique to recover plaintext from pixelized screenshots.",
         "techniques": [
             "enumeration",
-            "reconnaissance",
-            "footprinting"
+            "reconnaissance"
         ],
         "categories": [
             "dark_web",
@@ -987,7 +992,7 @@
         "source": "https://github.com/spipm/Depixelization_poc",
         "description": "Depix is a PoC for a technique to recover plaintext from pixelized screenshots.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "reverse_engineering"
         ],
         "categories": [
@@ -1003,14 +1008,12 @@
         "source": "https://github.com/horsicq/Detect-It-Easy",
         "description": "Detect It Easy (DiE) is a powerful tool for file type identification, popular among malware analysts, cybersecurity experts, and reverse engineers worldwide. Supporting both signature-based and heuristic analysis, DiE enables efficient file inspections across a broad range of platforms.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "malware_analysis",
             "reverse_engineering",
             "steganography"
         ],
-        "categories": [
-            "exfiltration"
-        ],
+        "categories": [],
         "targets": [
             "android",
             "files"
@@ -1037,11 +1040,11 @@
         "source": "https://dirb.sourceforge.net/",
         "description": "DIRB (Directory Buster) is a web content scanner used for brute-forcing directories and files on web servers. It searches for existing and hidden web objects by launching a dictionary-based attack against a web server and analyzing the responses. It helps discover hidden web directories and files that are not normally visible or indexed.",
         "techniques": [
-            "content_discovery",
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "fuzzing"
         ],
         "targets": [
@@ -1054,10 +1057,10 @@
         "source": "https://github.com/maurosoria/dirsearch",
         "description": "DIRB (Directory Buster) is a web content scanner used for brute-forcing directories and files on web servers. It searches for existing and hidden web objects by launching a dictionary-based attack against a web server and analyzing the responses. It helps discover hidden web directories and files that are not normally visible or indexed.",
         "techniques": [
-            "content_discovery",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "fuzzing"
         ],
         "targets": [
@@ -1070,7 +1073,6 @@
         "source": "https://dnsdumpster.com/",
         "description": "A free online DNS reconnaissance and research tool that helps gather information about a domain’s infrastructure. It is used for network reconnaissance, including subdomain enumeration, DNS records lookup, IP and host mapping, reverse DNS lookup, geolocation, and WHOIS data.",
         "techniques": [
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
@@ -1104,10 +1106,11 @@
         "source": "https://github.com/whitel1st/docem",
         "description": "A tool to embed XXE and XSS payloads in docx, odt, pptx, xlsx files (oxml_xxe on steroids)",
         "techniques": [
-            "XSS"
+            "exploitation"
         ],
         "categories": [
-            "payload"
+            "payload",
+            "XSS"
         ],
         "targets": [
             "files"
@@ -1151,9 +1154,11 @@
         "source": "https://github.com/Expert-Hacker/E-TOOL",
         "description": "E-TOOL is a tool that can capture microphone voice notes and retrieve photos from a victim's phone. It works on both rooted and non-rooted Android devices.",
         "techniques": [
+            "exploitation"
+        ],
+        "categories": [
             "hijacking"
         ],
-        "categories": [],
         "targets": [
             "android",
             "hardware"
@@ -1201,12 +1206,13 @@
         "techniques": [
             "enumeration",
             "exploitation",
-            "reconnaissance",
-            "sniffing",
-            "spoofing"
+            "networking",
+            "reconnaissance"
         ],
         "categories": [
-            "network_scanner"
+            "network_scanner",
+            "sniffing",
+            "spoofing"
         ],
         "targets": [
             "hardware",
@@ -1221,7 +1227,7 @@
         "source": "https://github.com/exiftool/exiftool",
         "description": "ExifTool is a powerful command-line tool and library used for reading, writing, and editing metadata in files, especially images, videos, and documents.",
         "techniques": [
-            "forensics"
+            "digital_forensics"
         ],
         "categories": [
             "OSINT"
@@ -1254,11 +1260,11 @@
         "source": "https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan",
         "description": "The OSINT project, the main idea of which is to collect all the possible Google dorks search combinations and to find the information about the specific web-site: common admin panels, the widespread file types and path traversal. The 100% automated.",
         "techniques": [
-            "content_discovery",
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "dorks",
             "OSINT",
             "search_engine"
@@ -1273,9 +1279,10 @@
         "source": "https://github.com/savio-code/fern-wifi-cracker",
         "description": "Fern WiFi Cracker is a GUI-based wireless security auditing tool for WiFi vulnerability assessments. It automates WiFi attacks on WEP, WPA, and WPA2 networks and includes features like WEP and WPA/WPA2 cracking, deauthentication attacks, session hijacking, MITM attacks, supports external tools such as Aircrack-ng, Reaver, xHydra, and more.",
         "techniques": [
-            "hijacking"
+            "exploitation"
         ],
         "categories": [
+            "hijacking",
             "rogue_access_point"
         ],
         "targets": [
@@ -1291,11 +1298,11 @@
         "source": "https://github.com/ffuf/ffuf",
         "description": "Ffuf is a fast web fuzzer written in Go that allows typical directory discovery, virtual host discovery (without DNS records) and GET and POST parameter fuzzing.",
         "techniques": [
-            "content_discovery",
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "fuzzing"
         ],
         "targets": [
@@ -1323,7 +1330,7 @@
         "source": "https://www.fing.com/",
         "description": "Fing - Network Tools is a powerful network scanning and troubleshooting app that helps users analyze and secure their home or office network. It features a network scanner, device recognition (fingerprinting), port scanner, Wi-Fi security analysis, internet speed test, and network troubleshooting tools.",
         "techniques": [
-            "footprinting"
+            "networking"
         ],
         "categories": [
             "fingerprinting",
@@ -1343,8 +1350,7 @@
         "source": "https://github.com/ElevenPaths/FOCA",
         "description": "FOCA (Fingerprinting Organizations with Collected Archives) is a tool primarily used to extract metadata and hidden information from scanned documents. It can analyze documents found on web pages by downloading and processing them.",
         "techniques": [
-            "forensics",
-            "footprinting"
+            "digital_forensics"
         ],
         "categories": [
             "fingerprinting"
@@ -1360,7 +1366,6 @@
         "source": "https://en.fofa.info/",
         "description": "FOFA is a search engine for global cyberspace mapping belonging to Beijing Huashun Xin'an Technology Co., Ltd. Through continuous active detection of global Internet assets, more than 4 billion assets and more than 350,000 fingerprint rules have been accumulated, identifying most software and hardware network assets. Asset data supports external presentation and application in various ways and can perform hierarchical portraits of assets based on IP.",
         "techniques": [
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
@@ -1378,12 +1383,10 @@
         "source": "https://github.com/jonstewart/foremost",
         "description": "Foremost is a console program to recover files based on their headers, footers, and internal data structures. This process is commonly referred to as data carving. Foremost can work on image files, such as those generated by dd, Safeback, Encase, etc, or directly on a drive. The headers and footers can be specified by a configuration file or you can use command line switches to specify built-in file types.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "steganography"
         ],
-        "categories": [
-            "exfiltration"
-        ],
+        "categories": [],
         "targets": [
             "files"
         ]
@@ -1432,14 +1435,14 @@
             "exploitation",
             "password_attack",
             "post_exploitation",
-            "reconnaissance",
-            "sniffing",
-            "spoofing"
+            "reconnaissance"
         ],
         "categories": [
             "credential_dumping",
             "network_scanner",
-            "OSINT"
+            "OSINT",
+            "sniffing",
+            "spoofing"
         ],
         "targets": [
             "network",
@@ -1510,10 +1513,10 @@
         "description": "An advanced cross-platform tool that automates the process of detecting and exploiting SQL injection security flaws.",
         "techniques": [
             "exploitation",
-            "SQL_injection",
             "vulnerability_assessment"
         ],
         "categories": [
+            "SQL_injection",
             "vulnerability_scanner"
         ],
         "targets": [
@@ -1528,11 +1531,13 @@
         "source": "https://github.com/NationalSecurityAgency/ghidra",
         "description": "Ghidra is a software reverse engineering (SRE) framework created and maintained by the National Security Agency Research Directorate. This framework includes a suite of full-featured, high-end software analysis tools that enable users to analyze compiled code on a variety of platforms including Windows, macOS, and Linux. Capabilities include disassembly, assembly, decompilation, graphing, and scripting, along with hundreds of other features.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "malware_analysis",
             "reverse_engineering"
         ],
-        "categories": [],
+        "categories": [
+            "source_code"
+        ],
         "targets": [
             "android",
             "files"
@@ -1545,17 +1550,45 @@
         "description": "Ghost Framework is an Android post-exploitation framework that exploits the Android Debug Bridge (ADB) to remotely access and control Android devices. Its key features include remote access, device control, ADB exploitation, file management, and system control.",
         "techniques": [
             "exploitation",
-            "hijacking",
-            "post_exploitation",
-            "remote_code_execution"
+            "post_exploitation"
         ],
         "categories": [
             "ADB",
-            "RAT"
+            "hijacking",
+            "RAT",
+            "remote_code_execution"
         ],
         "targets": [
             "android"
         ]
+    },
+    {
+        "name": "GitHound",
+        "url": "http://githoundexplore.com/",
+        "source": "https://github.com/tillson/git-hound",
+        "description": "GitHound hunts down exposed API keys, secrets, and credentials across GitHub by pairing GitHub dorks with pattern matching, contextual detection, and commit-history analysis.",
+        "techniques": [
+            "reconnaissance"
+        ],
+        "categories": [
+            "content_discovery",
+            "git"
+        ],
+        "targets": []
+    },
+    {
+        "name": "Gitleaks",
+        "url": "https://gitleaks.io/",
+        "source": "https://github.com/gitleaks/gitleaks",
+        "description": "Gitleaks is an open source secret scanner for git repositories, files, directories, and stdin.",
+        "techniques": [
+            "reconnaissance"
+        ],
+        "categories": [
+            "content_discovery",
+            "git"
+        ],
+        "targets": []
     },
     {
         "name": "Gnirehtet",
@@ -1578,9 +1611,7 @@
         "techniques": [
             "exploitation"
         ],
-        "categories": [
-            "credential"
-        ],
+        "categories": [],
         "targets": [
             "API"
         ]
@@ -1591,11 +1622,11 @@
         "source": "https://github.com/OJ/gobuster",
         "description": "Gobuster is a tool used to brute-force: URIs (directories and files) in web sites, DNS subdomains (with wildcard support), Virtual Host names on target web servers, Open Amazon S3 buckets, Open Google Cloud buckets, TFTP servers.",
         "techniques": [
-            "content_discovery",
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "fuzzing"
         ],
         "targets": [
@@ -1608,10 +1639,11 @@
         "source": "https://github.com/gophish/gophish",
         "description": "Gophish is an open-source phishing toolkit designed for businesses and penetration testers. It provides the ability to quickly and easily setup and execute phishing engagements and security awareness training.",
         "techniques": [
-            "phishing",
             "social_engineering"
         ],
-        "categories": [],
+        "categories": [
+            "phishing"
+        ],
         "targets": [
             "people",
             "web"
@@ -1641,11 +1673,11 @@
         "source": "https://github.com/jaeles-project/gospider",
         "description": "GoSpider is a fast, high-performance web spider written in Go that performs rapid crawling, brute-forces and parses sitemap.xml, reads robots.txt, generates and verifies links found in JavaScript files, and acts as a powerful link finder; it can discover AWS S3 buckets and subdomains from response sources and enrich its URL set using third-party and historical sources such as the Wayback Machine, Common Crawl, VirusTotal, and AlienVault.",
         "techniques": [
-            "content_discovery",
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "crawler",
             "javascript",
             "OSINT",
@@ -1662,10 +1694,10 @@
         "source": "https://grabify.link/",
         "description": "Grabify IP Logger and URL Shortener helps you find and track the IP address of anyone, providing advanced and detailed statistical data and metadata for every click on your links.",
         "techniques": [
+            "misc",
             "social_engineering"
         ],
         "categories": [
-            "tracker",
             "web_app"
         ],
         "targets": [
@@ -1682,6 +1714,7 @@
             "enumeration"
         ],
         "categories": [
+            "git",
             "OSINT",
             "search_engine",
             "web_app"
@@ -1696,9 +1729,11 @@
         "source": "https://github.com/hackerxphantom/HACK-CAMERA",
         "description": "Hack a victim's Android camera using a link with Termux or Kali Linux. Capture IP address, location, device type, and browser information. Supports dual tunneling using Cloudflare and Ngrok for secure access.",
         "techniques": [
+            "exploitation"
+        ],
+        "categories": [
             "hijacking"
         ],
-        "categories": [],
         "targets": [
             "android",
             "IoT",
@@ -1755,7 +1790,6 @@
         ],
         "categories": [
             "payload",
-            "web_app",
             "wordlists"
         ],
         "targets": [
@@ -1843,10 +1877,10 @@
         "source": "https://github.com/t3l3machus/hoaxshell",
         "description": "A Windows reverse shell payload generator and handler that abuses the http(s) protocol to establish a beacon-like reverse shell.",
         "techniques": [
-            "exploitation",
-            "remote_code_execution"
+            "exploitation"
         ],
         "categories": [
+            "remote_code_execution",
             "reverse_shell"
         ],
         "targets": [
@@ -2013,7 +2047,7 @@
         "source": "https://hybrid-analysis.com/",
         "description": "This is a free malware analysis service for the community that detects and analyzes unknown threats using a unique Hybrid Analysis technology. It is an online service that provides deep insights into potentially malicious files and URLs.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "malware_analysis"
         ],
         "categories": [
@@ -2064,7 +2098,7 @@
         "source": "https://www.metageek.com/inssider/",
         "description": "inSSIDer is a Wi-Fi network analysis tool developed by MetaGeek. It helps users analyze and optimize their Wi-Fi networks by providing insights into signal strength, interference, and channel usage.",
         "techniques": [
-            "footprinting"
+            "networking"
         ],
         "categories": [
             "network_scanner"
@@ -2082,7 +2116,6 @@
         "source": "https://intelx.io/",
         "description": "Intelligence X stands out from other search engines by enabling searches using specific selectors like email addresses, domains, IPs, Bitcoin addresses, and more. It explores unique sources such as the darknet, document sharing platforms, public data leaks, and WHOIS data, while also maintaining a historical archive of results, similar to the Wayback Machine.",
         "techniques": [
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
@@ -2100,8 +2133,7 @@
         "source": "https://archive.org/",
         "description": "Internet Archive is a non-profit library of millions of free texts, movies, software, music, websites, and more.",
         "techniques": [
-            "forensics",
-            "footprinting",
+            "digital_forensics",
             "reconnaissance"
         ],
         "categories": [
@@ -2126,7 +2158,6 @@
         "categories": [
             "active_directory",
             "payload",
-            "web_app",
             "wordlists"
         ],
         "targets": [
@@ -2143,7 +2174,6 @@
         "description": "A web based handy-recon tool that uses different Google Dorking techniques and some open sources service to find juicy information about target websites.",
         "techniques": [
             "enumeration",
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
@@ -2169,6 +2199,22 @@
         ],
         "targets": [
             "IoT"
+        ]
+    },
+    {
+        "name": "IP Logger",
+        "url": "https://iplogger.org/",
+        "source": "https://iplogger.org/",
+        "description": "IP Logger is a tool that generates trackable links or resources to collect analytics such as a visitor’s IP address, approximate location, and device information when they access the link.",
+        "techniques": [
+            "social_engineering"
+        ],
+        "categories": [
+            "OSINT"
+        ],
+        "targets": [
+            "people",
+            "web"
         ]
     },
     {
@@ -2224,10 +2270,10 @@
         "source": "https://github.com/cc1a2b/jshunter",
         "description": "JShunter is a command-line tool designed for analyzing JavaScript files and extracting endpoints. This tool specializes in identifying sensitive data, such as API endpoints and potential security vulnerabilities.",
         "techniques": [
-            "content_discovery",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "javascript",
             "OSINT"
         ],
@@ -2240,10 +2286,10 @@
         "url": "https://jsonlint.com/",
         "source": "https://github.com/circlecell/jsonlint",
         "description": "JSONLint is your go-to online solution for JSON validation, formatting, and conversion. Whether you're debugging APIs, transforming data formats, or generating code from JSON schemas, JSONLint has you covered.",
-        "techniques": [],
+        "techniques": [
+            "misc"
+        ],
         "categories": [
-            "JSON",
-            "JWT",
             "web_app"
         ],
         "targets": [
@@ -2259,8 +2305,7 @@
             "exploitation"
         ],
         "categories": [
-            "authentication",
-            "JWT",
+            "auth",
             "web_app"
         ],
         "targets": [
@@ -2277,8 +2322,7 @@
             "exploitation"
         ],
         "categories": [
-            "authentication",
-            "JWT",
+            "auth",
             "web_app"
         ],
         "targets": [
@@ -2295,8 +2339,7 @@
             "exploitation"
         ],
         "categories": [
-            "authentication",
-            "JWT",
+            "auth",
             "web_app"
         ],
         "targets": [
@@ -2313,8 +2356,7 @@
             "exploitation"
         ],
         "categories": [
-            "authentication",
-            "JWT",
+            "auth",
             "web_app"
         ],
         "targets": [
@@ -2328,11 +2370,11 @@
         "source": "https://github.com/projectdiscovery/katana",
         "description": "Katana is a powerful web crawler and content discovery tool that parses JavaScript files, sitemaps, and HTML to identify URLs, endpoints, and parameters for security testing.",
         "techniques": [
-            "content_discovery",
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "crawler",
             "fingerprinting",
             "javascript",
@@ -2350,9 +2392,7 @@
         "techniques": [
             "exploitation"
         ],
-        "categories": [
-            "credential"
-        ],
+        "categories": [],
         "targets": [
             "API"
         ]
@@ -2378,10 +2418,11 @@
         "source": "https://github.com/kismetwireless/kismet",
         "description": "Kismet is an open source sniffer, WIDS, wardriver, and packet capture tool for Wi-Fi, Bluetooth, BTLE, wireless thermometers, airplanes, power meters, Zigbee, and more.",
         "techniques": [
-            "sniffing"
+            "networking"
         ],
         "categories": [
-            "network_scanner"
+            "network_scanner",
+            "sniffing"
         ],
         "targets": [
             "hardware",
@@ -2481,11 +2522,11 @@
         "source": "https://github.com/GerbenJavado/LinkFinder",
         "description": "LinkFinder is a python script written to discover endpoints and their parameters in JavaScript files.",
         "techniques": [
-            "content_discovery",
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "extension",
             "fingerprinting",
             "javascript",
@@ -2515,9 +2556,10 @@
         "source": "https://github.com/garywill/linux-router",
         "description": "Set up Linux as a router with a single command, supporting internet sharing, a transparent proxy (redsocks), WiFi hotspot, and IPv6. It can also be used for routing VMs and containers. Key features include creating a NATed sub-network, providing internet access, running a DHCP server (with RA), acting as a DNS server, supporting IPv6 behind a NATed LAN (similar to IPv4), creating a WiFi hotspot or access point, enabling a transparent proxy (redsocks), and hijacking port 53 packets for transparent DNS proxying.",
         "techniques": [
-            "hijacking"
+            "exploitation"
         ],
         "categories": [
+            "hijacking",
             "rogue_access_point"
         ],
         "targets": [
@@ -2548,10 +2590,10 @@
         "description": "The LES tool is designed to assist in detecting security deficiencies in a given Linux kernel or Linux-based machine by assessing kernel exposure to publicly known exploits and verifying the state of kernel hardening security measures.",
         "techniques": [
             "exploitation",
-            "privilege_escalation",
             "vulnerability_assessment"
         ],
         "categories": [
+            "privilege_escalation",
             "vulnerability_scanner"
         ],
         "targets": [
@@ -2564,11 +2606,13 @@
         "source": "https://github.com/NewEraCracker/LOIC/",
         "description": "Low Orbit Ion Cannon (LOIC) is an open source network stress tool, written in C#. LOIC is based on Praetox's LOIC project.",
         "techniques": [
+            "exploitation"
+        ],
+        "categories": [
             "denial_of_service"
         ],
-        "categories": [],
         "targets": [
-            "android"
+            "network"
         ]
     },
     {
@@ -2578,15 +2622,16 @@
         "description": "MagicRecon is a powerful shell script to maximize the recon and data collection process of an objective and finding common vulnerabilities, all this saving the results obtained in an organized way in directories and with various formats.",
         "techniques": [
             "enumeration",
-            "reconnaissance",
-            "SQL_injection",
-            "XSS"
+            "exploitation",
+            "reconnaissance"
         ],
         "categories": [
             "fingerprinting",
             "network_scanner",
             "OSINT",
-            "subdomain_enum"
+            "SQL_injection",
+            "subdomain_enum",
+            "XSS"
         ],
         "targets": [
             "network",
@@ -2600,9 +2645,10 @@
         "description": "Magisk is a suite of open source software for customizing Android, supporting devices higher than Android 6.0.",
         "techniques": [
             "exploitation",
-            "privilege_escalation"
+            "post_exploitation"
         ],
         "categories": [
+            "privilege_escalation",
             "root"
         ],
         "targets": [
@@ -2615,8 +2661,7 @@
         "source": "https://www.maltego.com/",
         "description": "Maltego is a graph-based intelligence and forensics tool used for OSINT gathering, link analysis, and data visualization. It discovers relationships between entities such as domains, IP addresses, emails, social media accounts, infrastructure, and threat actors.",
         "techniques": [
-            "forensics",
-            "footprinting",
+            "digital_forensics",
             "social_engineering"
         ],
         "categories": [
@@ -2669,7 +2714,6 @@
         "source": "https://github.com/opsdisk/metagoofil",
         "description": "Metagoofil is an open-source tool that gathers metadata from publicly available documents on the internet. It extracts information such as usernames, software versions, and emails from PDFs, DOCs, XLSs, and PPTs. It searches Google for specific file types and can optionally download them.",
         "techniques": [
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
@@ -2687,12 +2731,12 @@
         "techniques": [
             "enumeration",
             "exploitation",
-            "post_exploitation",
-            "remote_code_execution"
+            "post_exploitation"
         ],
         "categories": [
             "evasion",
             "network_scanner",
+            "remote_code_execution",
             "reverse_shell"
         ],
         "targets": [
@@ -2723,17 +2767,17 @@
     },
     {
         "name": "Mimikatz",
-        "url": "https://parrotsec.org/",
-        "source": "https://gitlab.com/parrotsec",
+        "url": "https://blog.gentilkiwi.com/mimikatz",
+        "source": "https://github.com/gentilkiwi/mimikatz",
         "description": "Extract plaintext passwords, hashes, PINs, and Kerberos tickets from memory, as well as perform pass-the-hash, pass-the-ticket, and create Golden Tickets.",
         "techniques": [
             "password_attack",
-            "post_exploitation",
-            "privilege_escalation"
+            "post_exploitation"
         ],
         "categories": [
             "active_directory",
-            "credential_dumping"
+            "credential_dumping",
+            "privilege_escalation"
         ],
         "targets": [
             "windows"
@@ -2765,10 +2809,10 @@
         "source": "https://sourceforge.net/projects/themole/",
         "description": "Mole is an automatic SQL Injection exploitation tool. Only by providing a vulnerable URL and a valid string on the site it can detect the injection and exploit it, either by using the union technique or a boolean query based technique.",
         "techniques": [
-            "SQL_injection",
             "vulnerability_assessment"
         ],
         "categories": [
+            "SQL_injection",
             "vulnerability_scanner"
         ],
         "targets": [
@@ -2783,10 +2827,11 @@
         "source": "https://github.com/noob-hackers/mrphish",
         "description": "MrPhish is a Bash-based script officially designed for phishing social media accounts with port forwarding and OTP bypass control. This tool works on both rooted and non-rooted Android devices.",
         "techniques": [
-            "phishing",
             "social_engineering"
         ],
-        "categories": [],
+        "categories": [
+            "phishing"
+        ],
         "targets": [
             "people",
             "web"
@@ -2815,7 +2860,6 @@
         "description": "MXToolbox is a free online toolset for email, DNS, and network diagnostics. It is widely used by IT professionals, system administrators, and security experts to monitor and troubleshoot email servers, DNS records, and blacklists.",
         "techniques": [
             "enumeration",
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
@@ -2832,7 +2876,7 @@
         "source": "https://www.searchftps.net/",
         "description": "NAPALM FTP Indexer is an advanced FTP search engine that allows users to search and download files from public FTP servers. It maintains a comprehensive database of files from numerous FTP servers, updated regularly by an intelligent FTP crawler.",
         "techniques": [
-            "footprinting"
+            "networking"
         ],
         "categories": [
             "OSINT",
@@ -2898,12 +2942,12 @@
         "description": "The Swiss Army Knife of Networking - Netcat (nc) is a simple Unix utility which reads and writes data across network connections, using TCP or UDP protocol. it can create almost any kind of connection you would need and has several interesting built-in capabilities.",
         "techniques": [
             "enumeration",
-            "footprinting",
-            "sniffing"
+            "networking"
         ],
         "categories": [
             "network_scanner",
-            "reverse_shell"
+            "reverse_shell",
+            "sniffing"
         ],
         "targets": [
             "IoT",
@@ -2953,12 +2997,12 @@
         "description": "NjRAT-0.7D is a powerful remote administration tool (RAT) for Windows systems, enabling remote access and control of infected machines. It is capable of keylogging, webcam access, credential theft, file manipulation, desktop viewing, and botnet control.",
         "techniques": [
             "exploitation",
-            "hijacking",
-            "post_exploitation",
-            "remote_code_execution"
+            "post_exploitation"
         ],
         "categories": [
-            "RAT"
+            "hijacking",
+            "RAT",
+            "remote_code_execution"
         ],
         "targets": [
             "windows"
@@ -3004,10 +3048,10 @@
         "description": "NoSQLMap is an open source Python tool designed to audit for as well as automate injection attacks and exploit default configuration weaknesses in NoSQL databases and web applications using NoSQL in order to disclose or clone data from the database.",
         "techniques": [
             "exploitation",
-            "SQL_injection",
             "vulnerability_assessment"
         ],
         "categories": [
+            "SQL_injection",
             "vulnerability_scanner"
         ],
         "targets": [
@@ -3022,8 +3066,7 @@
         "source": "https://www.isc.org/bind/",
         "description": "The nslookup (Name Server Lookup) command is a DNS query tool used to find IP addresses, domain names, mail servers, and other DNS records.",
         "techniques": [
-            "enumeration",
-            "footprinting"
+            "enumeration"
         ],
         "categories": [
             "network_scanner"
@@ -3054,7 +3097,7 @@
         "source": "https://github.com/sensepost/objection",
         "description": "Objection is a runtime mobile exploration toolkit powered by Frida, designed to help assess the security posture of mobile applications without requiring a jailbreak. It supports both iOS and Android, allowing you to inspect and interact with container file systems, bypass SSL pinning, dump keychains, perform memory-related tasks like dumping and patching, explore and manipulate objects on the heap, and much more.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "enumeration",
             "malware_analysis"
         ],
@@ -3073,11 +3116,10 @@
         "source": "https://github.com/syvaidya/openstego",
         "description": "OpenStego is a steganography application that provides two functionalities: a) Data Hiding: It can hide any data within an image file. b) Watermarking: Watermarking image files with an invisible signature. It can be used to detect unauthorized file copying.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "steganography"
         ],
         "categories": [
-            "exfiltration",
             "evasion"
         ],
         "targets": [
@@ -3124,7 +3166,6 @@
         "description": "All in one Information Gathering Tools - Public Buckets Search, Subdomain Finder, DNS History, Reverse IP Lookup, Technology Lookup, Certificate Search, DNS Lookup, Reverse Google Analytics/AdSense, Whois History, Reverse Whois, OCR Text Extractor, and MD5 Hash Guessing.",
         "techniques": [
             "enumeration",
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
@@ -3145,12 +3186,10 @@
         "description": "OSINT framework focused on gathering information from free tools or resources. The intention is to help people find free OSINT resources.",
         "techniques": [
             "enumeration",
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
-            "OSINT",
-            "web_app"
+            "OSINT"
         ],
         "targets": [
             "people",
@@ -3164,9 +3203,11 @@
         "description": "Pacu is an open-source AWS exploitation framework, designed for offensive security testing against cloud environments. Created and maintained by Rhino Security Labs, Pacu allows penetration testers to exploit configuration flaws within an AWS account, using modules to easily expand its functionality. Current modules enable a range of attacks, including user privilege escalation, backdooring of IAM users, attacking vulnerable Lambda functions, and much more.",
         "techniques": [
             "exploitation",
+            "post_exploitation"
+        ],
+        "categories": [
             "privilege_escalation"
         ],
-        "categories": [],
         "targets": [
             "cloud"
         ]
@@ -3198,7 +3239,6 @@
         ],
         "categories": [
             "payload",
-            "web_app",
             "wordlists"
         ],
         "targets": [
@@ -3225,11 +3265,11 @@
         "source": "https://github.com/devanshbatham/ParamSpider",
         "description": "paramspider allows you to fetch URLs related to any domain or a list of domains from Wayback achives. It filters out \"boring\" URLs, allowing you to focus on the ones that matter the most.",
         "techniques": [
-            "content_discovery",
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "fuzzing",
             "OSINT"
         ],
@@ -3243,11 +3283,12 @@
         "source": "https://github.com/kaanatmacaa/pdf-injection",
         "description": "Tool to create XSS PDF files.",
         "techniques": [
-            "XSS"
+            "exploitation"
         ],
         "categories": [
             "payload",
-            "polyglot"
+            "polyglot",
+            "XSS"
         ],
         "targets": [
             "files",
@@ -3260,11 +3301,11 @@
         "source": "https://github.com/Sic4rio/pdf-payload-injection-tool",
         "description": "A tool for injecting custom JavaScript payloads into PDF files for penetration testing and XSS proof-of-concept generation.",
         "techniques": [
-            "exploitation",
-            "XSS"
+            "exploitation"
         ],
         "categories": [
-            "payload"
+            "payload",
+            "XSS"
         ],
         "targets": [
             "files",
@@ -3277,7 +3318,7 @@
         "source": "https://www.xpdfreader.com/download.html",
         "description": "Pdfinfo is a command-line tool used to extract metadata and document properties from PDF files. It is part of the Poppler-utils package.",
         "techniques": [
-            "forensics"
+            "digital_forensics"
         ],
         "categories": [
             "OSINT"
@@ -3293,10 +3334,11 @@
         "description": "Privilege Escalation Awesome Scripts - Next Generation is a post-exploitation toolkit for Windows and Linux, automating privilege escalation discovery by identifying misconfigurations, vulnerable services, and weak permissions.",
         "techniques": [
             "exploitation",
-            "post_exploitation",
+            "post_exploitation"
+        ],
+        "categories": [
             "privilege_escalation"
         ],
-        "categories": [],
         "targets": [
             "linux",
             "windows"
@@ -3325,12 +3367,13 @@
         "source": "https://github.com/AzeemIdrisi/PhoneSploit-Pro",
         "description": "An all-in-one hacking tool designed to remotely exploit Android devices using ADB and the Metasploit Framework to establish a Meterpreter session. This tool can automatically create, install, and execute payloads on a target device using Metasploit Framework and ADB, enabling complete control of the Android device in a single click. It streamlines the process of payload creation, installation, and execution, making penetration testing and vulnerability assessments more efficient.",
         "techniques": [
-            "exploitation",
-            "hijacking",
-            "remote_code_execution"
+            "enumeration",
+            "exploitation"
         ],
         "categories": [
-            "ADB"
+            "ADB",
+            "hijacking",
+            "remote_code_execution"
         ],
         "targets": [
             "android"
@@ -3342,11 +3385,11 @@
         "source": "https://github.com/pentestmonkey/php-reverse-shell",
         "description": "A Reverse Shell implementation in PHP",
         "techniques": [
-            "exploitation",
-            "remote_code_execution"
+            "exploitation"
         ],
         "categories": [
             "payload",
+            "remote_code_execution",
             "reverse_shell"
         ],
         "targets": []
@@ -3375,7 +3418,7 @@
         "source": "https://www.cgsecurity.org/wiki/PhotoRec",
         "description": "PhotoRec is an open-source file recovery tool designed to retrieve lost or deleted files from hard drives, memory cards, USB drives, and other storage devices. It is commonly used in digital forensics and data recovery to extract lost evidence or accidentally deleted files. It will work even if the media's file system is severely damaged or reformatted.",
         "techniques": [
-            "forensics"
+            "digital_forensics"
         ],
         "categories": [
             "OSINT"
@@ -3418,12 +3461,11 @@
         "source": "https://github.com/evyatarmeged/Raccoon",
         "description": "Raccoon is an offensive security tool designed for reconnaissance and information gathering. It performs various tasks, including fetching DNS records, retrieving WHOIS information, obtaining TLS data, detecting WAF presence, threaded directory busting, and subdomain enumeration. Additionally, it supports subdomain enumeration, port scanning, service & banner grabbing, WHOIS & DNS lookups, web application scanning, OSINT, URL fuzzing, and directory & file detection.",
         "techniques": [
-            "content_discovery",
             "enumeration",
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "fingerprinting",
             "fuzzing",
             "network_scanner",
@@ -3522,9 +3564,14 @@
         "source": "https://github.com/reqable",
         "description": "Reqable is a modern cross-platform project, designed for API development, testing, and debugging. Reqable fully supports HTTP1 and HTTP2 and partially supports HTTP3(QUIC).",
         "techniques": [
+            "enumeration",
+            "exploitation",
+            "reconnaissance",
+            "vulnerability_assessment"
+        ],
+        "categories": [
             "HTTP_tampering"
         ],
-        "categories": [],
         "targets": [
             "network",
             "web"
@@ -3536,13 +3583,14 @@
         "source": "https://github.com/lgandx/Responder",
         "description": "Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication.",
         "techniques": [
+            "exploitation",
             "password_attack",
-            "post_exploitation",
-            "privilege_escalation"
+            "post_exploitation"
         ],
         "categories": [
             "active_directory",
-            "credential_dumping"
+            "credential_dumping",
+            "privilege_escalation"
         ],
         "targets": [
             "windows"
@@ -3572,10 +3620,11 @@
         "description": "Hosted Reverse Shell generator with a ton of functionality.",
         "techniques": [
             "exploitation",
-            "privilege_escalation",
-            "remote_code_execution"
+            "post_exploitation"
         ],
         "categories": [
+            "privilege_escalation",
+            "remote_code_execution",
             "reverse_shell",
             "web_app"
         ],
@@ -3591,10 +3640,10 @@
         "source": "https://gitlab.com/newbit/rootAVD",
         "description": "Script to root AVDs running with QEMU Emulator from Android Studio.",
         "techniques": [
-            "exploitation",
-            "privilege_escalation"
+            "exploitation"
         ],
         "categories": [
+            "privilege_escalation",
             "root"
         ],
         "targets": [
@@ -3668,12 +3717,12 @@
         "description": "SeaShell Framework is an iOS post-exploitation framework developed by EntySec that enables you to access a device remotely, control it, and extract sensitive information. The attacker generates an IPA file, and starts a TCP listener. The IPA needs to be installed through TrollStore or another app that exploits a similar CoreTrust bug and launched to execute the payload. The attacker will then receive an interactive session with the device. Its default payload is Pwny, with features including evasion, TLS encryption, and dynamic extensions.",
         "techniques": [
             "exploitation",
-            "hijacking",
-            "post_exploitation",
-            "remote_code_execution"
+            "post_exploitation"
         ],
         "categories": [
-            "RAT"
+            "hijacking",
+            "RAT",
+            "remote_code_execution"
         ],
         "targets": [
             "iOS"
@@ -3720,11 +3769,11 @@
         "source": "https://github.com/m4ll0k/SecretFinder",
         "description": "A python script for find sensitive data (apikeys, accesstoken,jwt,..) and search anything on javascript files,",
         "techniques": [
-            "content_discovery",
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "extension",
             "fingerprinting",
             "javascript",
@@ -3753,12 +3802,11 @@
         ]
     },
     {
-        "name": "Shcheck",
+        "name": "Sherlock",
         "url": "https://sherlockproject.xyz/",
         "source": "https://github.com/sherlock-project/sherlock",
         "description": "Hunt down social media accounts by username across social networks.",
         "techniques": [
-            "footprinting",
             "social_engineering"
         ],
         "categories": [
@@ -3874,10 +3922,10 @@
         "source": "https://github.com/defparam/smuggler",
         "description": "An HTTP Request Smuggling / Desync testing tool written in Python 3.",
         "techniques": [
-            "HTTP_smuggling",
             "vulnerability_assessment"
         ],
         "categories": [
+            "HTTP_smuggling",
             "vulnerability_scanner"
         ],
         "targets": [
@@ -3947,7 +3995,6 @@
             "steganography"
         ],
         "categories": [
-            "exfiltration",
             "evasion"
         ],
         "targets": [
@@ -3960,10 +4007,11 @@
         "source": "https://github.com/trustedsec/social-engineer-toolkit",
         "description": "The Social-Engineer Toolkit is an open-source penetration testing framework designed for social engineering.",
         "techniques": [
-            "phishing",
             "social_engineering"
         ],
-        "categories": [],
+        "categories": [
+            "phishing"
+        ],
         "targets": [
             "people",
             "web"
@@ -3975,7 +4023,7 @@
         "source": "https://github.com/ghostop14/sparrow-wifi",
         "description": "Sparrow-wifi is an advanced graphical Wi-Fi and Bluetooth analyzer designed specifically for Linux systems. Developed as a next-generation tool for 2.4 GHz and 5 GHz Wi-Fi spectral awareness, it offers a comprehensive GUI-based alternative to tools like inSSIDer and LinSSID.",
         "techniques": [
-            "footprinting"
+            "enumeration"
         ],
         "categories": [
             "network_scanner"
@@ -4012,11 +4060,12 @@
         "source": "https://github.com/a6avind/spoofcheck",
         "description": "A Python tool to check if a domain can be spoofed by analyzing its SPF and DMARC records.",
         "techniques": [
-            "spoofing"
+            "networking"
         ],
         "categories": [
             "misconfigs",
-            "email"
+            "email",
+            "spoofing"
         ],
         "targets": [
             "network",
@@ -4042,10 +4091,11 @@
         "source": "https://github.com/americo/sqlifinder",
         "description": "Sqlifinder is a tool with the function of detecting GET-based sql injection vulnerabilities in web applications using waybackurls, web crawlers and sql injection payloads.",
         "techniques": [
-            "SQL_injection",
+            "exploitation",
             "vulnerability_assessment"
         ],
         "categories": [
+            "SQL_injection",
             "vulnerability_scanner"
         ],
         "targets": [
@@ -4061,10 +4111,10 @@
         "description": "sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.",
         "techniques": [
             "exploitation",
-            "SQL_injection",
             "vulnerability_assessment"
         ],
         "categories": [
+            "SQL_injection",
             "vulnerability_scanner"
         ],
         "targets": [
@@ -4134,11 +4184,10 @@
         "source": "http://sourceforge.net/projects/steghide/",
         "description": "Steghide is a steganography program that is able to hide data in various kinds of image- and audio-files. The color- respectivly sample-frequencies are not changed thus making the embedding resistant against first-order statistical tests.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "steganography"
         ],
         "categories": [
-            "exfiltration",
             "evasion"
         ],
         "targets": [
@@ -4151,11 +4200,13 @@
         "source": "https://github.com/ultrasecurity/Storm-Breaker",
         "description": "Storm-Breaker is a social engineering tool that allows access to a target's webcam, microphone, and location using Python, JavaScript, and PHP. It can obtain device information without requiring explicit permission, access location data specifically from smartphones, and remotely control the webcam and microphone.",
         "techniques": [
-            "hijacking",
-            "phishing",
+            "exploitation",
             "social_engineering"
         ],
-        "categories": [],
+        "categories": [
+            "hijacking",
+            "phishing"
+        ],
         "targets": [
             "android",
             "hardware",
@@ -4257,10 +4308,12 @@
         "techniques": [
             "enumeration",
             "malware_analysis",
-            "sniffing"
+            "networking"
         ],
         "categories": [
-            "network_scanner"
+            "network_scanner",
+            "sniffing",
+            "source_code"
         ],
         "targets": [
             "windows"
@@ -4272,10 +4325,11 @@
         "source": "https://github.com/the-tcpdump-group",
         "description": "TCP dump is packet analyser tool used to capture and analyse packets and network traffic in real-time over network.",
         "techniques": [
-            "sniffing"
+            "networking"
         ],
         "categories": [
-            "network_scanner"
+            "network_scanner",
+            "sniffing"
         ],
         "targets": [
             "network"
@@ -4287,7 +4341,6 @@
         "source": "https://www.telnet.org/",
         "description": "Telnet is a network protocol used to provide a command-line interface for remote access to another computer over a TCP/IP network. It allows users to log into a remote system and execute commands as if they were physically present at the machine.",
         "techniques": [
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
@@ -4304,10 +4357,11 @@
         "source": "https://github.com/nohajc/termux-adb",
         "description": "Run adb and fastboot in Termux without root permissions.",
         "techniques": [
-            "privilege_escalation"
+            "exploitation"
         ],
         "categories": [
-            "ADB"
+            "ADB",
+            "privilege_escalation"
         ],
         "targets": [
             "android"
@@ -4319,7 +4373,7 @@
         "source": "https://www.cgsecurity.org/wiki/TestDisk",
         "description": "TestDisk is an open-source data recovery software and digital forensics tool designed to recover lost partitions, fix boot issues, and restore deleted files.",
         "techniques": [
-            "forensics"
+            "digital_forensics"
         ],
         "categories": [
             "OSINT"
@@ -4352,7 +4406,7 @@
         "source": "https://www.sleuthkit.org/sleuthkit/",
         "description": "The Sleuth Kit (TSK) is a library and collection of command line tools that allow you to investigate disk images. The core functionality of TSK allows you to analyze volume and file system data. The library can be incorporated into larger digital forensics tools and the command line tools can be directly used to find evidence.",
         "techniques": [
-            "forensics"
+            "digital_forensics"
         ],
         "categories": [
             "OSINT"
@@ -4369,7 +4423,6 @@
         "description": "OSINT gathering tool (collects names, emails, IP addresses, subdomains, and URLs using multiple public resources).",
         "techniques": [
             "enumeration",
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
@@ -4388,7 +4441,7 @@
         "source": "https://github.com/aquasecurity/tracee",
         "description": "Tracee is a runtime security and observability tool that helps you understand how your system and applications behave. It is using eBPF technology to tap into your system and expose that information as events that you can consume.",
         "techniques": [
-            "forensics"
+            "digital_forensics"
         ],
         "categories": [],
         "targets": [
@@ -4402,13 +4455,11 @@
         "source": "https://github.com/jofpin/trape",
         "description": "People tracker on the Internet: Learn to track the world, to avoid being traced.",
         "techniques": [
-            "footprinting",
-            "phishing",
             "social_engineering"
         ],
         "categories": [
             "OSINT",
-            "tracker"
+            "phishing"
         ],
         "targets": [
             "people"
@@ -4483,7 +4534,6 @@
         "source": "https://urlextractor.net/",
         "description": "This tool extracts URLs, meta tags, images, and email addresses from webpages and files, listing relevant information while navigating links to gather domains.",
         "techniques": [
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
@@ -4503,8 +4553,22 @@
         ],
         "categories": [
             "bypass",
-            "web_app",
             "wordlists"
+        ],
+        "targets": [
+            "web"
+        ]
+    },
+    {
+        "name": "URLFinder",
+        "url": "https://github.com/projectdiscovery/urlfinder",
+        "source": "https://github.com/projectdiscovery/urlfinder",
+        "description": "A high-speed tool for passively gathering URLs, optimized for efficient web asset discovery without active scanning.",
+        "techniques": [
+            "reconnaissance"
+        ],
+        "categories": [
+            "OSINT"
         ],
         "targets": [
             "web"
@@ -4535,7 +4599,7 @@
         "source": "https://www.virustotal.com/",
         "description": "VirusTotal is a free online service that analyzes files, URLs, IPs, and domains for viruses, malware, and other kinds of malicious content using a combination of 70+ antivirus engines, sandboxing tools, and threat intelligence sources.",
         "techniques": [
-            "forensics",
+            "digital_forensics",
             "malware_analysis"
         ],
         "categories": [
@@ -4571,13 +4635,13 @@
         "description": "W3af (Web Application Attack and Audit Framework) is an open-source web application security scanner designed to identify and exploit vulnerabilities in web applications. It is user-friendly, highly extensible, and includes dozens of plugins for web assessment and exploitation. In many ways, it functions like a web-focused version of Metasploit.",
         "techniques": [
             "exploitation",
-            "SQL_injection",
-            "vulnerability_assessment",
-            "XSS"
+            "vulnerability_assessment"
         ],
         "categories": [
             "network_scanner",
-            "vulnerability_scanner"
+            "SQL_injection",
+            "vulnerability_scanner",
+            "XSS"
         ],
         "targets": [
             "web",
@@ -4658,8 +4722,7 @@
         "source": "https://web.archive.org/",
         "description": "The Wayback Machine - Internet’s Time Machine (part of Internet Archive) is a web archiving tool that stores historical snapshots of websites. It allows users to view old versions of web pages, even if they have been deleted or modified.",
         "techniques": [
-            "forensics",
-            "footprinting",
+            "digital_forensics",
             "reconnaissance",
             "social_engineering"
         ],
@@ -4678,11 +4741,10 @@
         "source": "https://github.com/tomnomnom/waybackurls",
         "description": "Accept line-delimited domains on stdin, fetch known URLs from the Wayback Machine for *.domain and output them on stdout.",
         "techniques": [
-            "content_discovery",
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "OSINT",
             "web_archive"
         ],
@@ -4696,11 +4758,10 @@
         "source": "https://github.com/xnl-h4ck3r/waymore",
         "description": "Find way more from the Wayback Machine, Common Crawl, Alien Vault OTX, URLScan, VirusTotal & Intelligence X.",
         "techniques": [
-            "content_discovery",
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "OSINT",
             "web_archive"
         ],
@@ -4731,10 +4792,10 @@
         "description": "WES-NG (Windows Exploit Suggester - Next Generation) is a tool based on the output of Windows' systeminfo utility which provides the list of vulnerabilities the OS is vulnerable to, including any exploits for these vulnerabilities. Every Windows OS between Windows XP and Windows 11, including their Windows Server counterparts, is supported.",
         "techniques": [
             "exploitation",
-            "privilege_escalation",
             "vulnerability_assessment"
         ],
         "categories": [
+            "privilege_escalation",
             "vulnerability_scanner"
         ],
         "targets": [
@@ -4779,10 +4840,11 @@
         "source": "https://gitlab.com/wireshark/wireshark",
         "description": "Wireshark is a open-source network protocol analyzer that interactively captures and analyzes network traffic in real time.",
         "techniques": [
-            "sniffing"
+            "networking"
         ],
         "categories": [
-            "network_scanner"
+            "network_scanner",
+            "sniffing"
         ],
         "targets": [
             "network"
@@ -4828,7 +4890,6 @@
         "description": "Retrieve WHOIS information or records for a domain.",
         "techniques": [
             "enumeration",
-            "footprinting",
             "reconnaissance"
         ],
         "categories": [
@@ -4845,7 +4906,7 @@
         "source": "https://lizardsystems.com/wi-fi-scanner/",
         "description": "Wi-Fi Scanner is a Wi-Fi network analysis tool designed to help users find and troubleshoot wireless networks. It provides detailed information about nearby Wi-Fi networks, including the network name (SSID), signal strength (RSSI) and quality, MAC address (BSSID), channel, maximum and achievable data rates, security settings, channel usage, and bandwidth.",
         "techniques": [
-            "footprinting"
+            "enumeration"
         ],
         "categories": [
             "network_scanner"
@@ -4863,7 +4924,7 @@
         "source": "https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer",
         "description": "WiFi Analyzer is a free, open-source Wi-Fi analysis tool available for Android devices. It helps users optimize their Wi-Fi networks by providing detailed insights into signal strength, channel usage, and interference. Key features include real-time signal strength monitoring, SSID & BSSID information, and more.",
         "techniques": [
-            "footprinting"
+            "enumeration"
         ],
         "categories": [
             "network_scanner"
@@ -4881,11 +4942,11 @@
         "description": "Wifiphisher is a rogue access point framework designed for red team engagements and Wi-Fi security testing. It allows penetration testers to achieve a man-in-the-middle position against wireless clients by performing targeted Wi-Fi association attacks. Wifiphisher can also be used for victim-customized web phishing attacks, capturing credentials from third-party login pages or WPA/WPA2 Pre-Shared Keys, and even infecting victim devices with malware. Key features include Evil Twin attacks, Deauthentication attacks, Captive Portal Phishing, Payload Injection, Multiple Attack Modes, and the ability to bypass password cracking.",
         "techniques": [
             "exploitation",
-            "phishing",
             "social_engineering"
         ],
         "categories": [
             "credential_dumping",
+            "phishing",
             "rogue_access_point"
         ],
         "targets": [
@@ -4900,7 +4961,7 @@
         "source": "https://www.ui.com/download",
         "description": "WiFiman is a Wi-Fi and network analysis tool developed by Ubiquiti Inc. It helps users scan Wi-Fi networks, analyze signal strength, detect interference, and test internet speed.",
         "techniques": [
-            "footprinting"
+            "enumeration"
         ],
         "categories": [
             "network_scanner"
@@ -4918,11 +4979,11 @@
         "source": "https://github.com/xmendez/wfuzz",
         "description": "WFuzz is a web application security tool designed for brute-forcing web applications to discover hidden files, directories, parameters, and vulnerabilities. It's primarily used for fuzzing (i.e., testing web applications by sending various payloads).",
         "techniques": [
-            "content_discovery",
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "fuzzing"
         ],
         "targets": [
@@ -4951,11 +5012,11 @@
         "source": "https://github.com/xnl-h4ck3r/xnLinkFinder",
         "description": "A python tool used to discover endpoints, potential parameters, and a target specific wordlist for a given target.",
         "techniques": [
-            "content_discovery",
             "enumeration",
             "reconnaissance"
         ],
         "categories": [
+            "content_discovery",
             "OSINT"
         ],
         "targets": [
@@ -4969,11 +5030,11 @@
         "description": "Cross-Site Scripter (aka XSSer) is an automated penetration testing tool designed to detect, exploit, and report Cross-Site Scripting (XSS) vulnerabilities in web applications. It supports automated scanning for XSS vulnerabilities, multiple types of XSS attacks, the ability to generate and obfuscate payloads, and integration with Tor for anonymous testing.",
         "techniques": [
             "exploitation",
-            "vulnerability_assessment",
-            "XSS"
+            "vulnerability_assessment"
         ],
         "categories": [
-            "vulnerability_scanner"
+            "vulnerability_scanner",
+            "XSS"
         ],
         "targets": [
             "web"
@@ -4986,11 +5047,11 @@
         "description": "XSStrike is a Cross Site Scripting detection suite equipped with four hand written parsers, an intelligent payload generator, a powerful fuzzing engine and an incredibly fast crawler.",
         "techniques": [
             "exploitation",
-            "vulnerability_assessment",
-            "XSS"
+            "vulnerability_assessment"
         ],
         "categories": [
-            "vulnerability_scanner"
+            "vulnerability_scanner",
+            "XSS"
         ],
         "targets": [
             "web"
@@ -5002,11 +5063,14 @@
         "source": "https://github.com/zaproxy",
         "description": "ZAP (Zed Attack Proxy), or ZAP Proxy, is an open-source security tool used to identify vulnerabilities in web applications. It is developed and maintained by the OWASP community. ZAP is used for web application security testing, API penetration testing, and automated vulnerability scanning.",
         "techniques": [
-            "HTTP_tampering",
+            "enumeration",
+            "exploitation",
+            "reconnaissance",
             "vulnerability_assessment"
         ],
         "categories": [
             "fuzzing",
+            "HTTP_tampering",
             "vulnerability_scanner"
         ],
         "targets": [

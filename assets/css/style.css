@@ -75,7 +75,7 @@ a {
 }
 .filter-box {
     display: grid;
-    grid-template-columns: 4fr 5fr 2fr;
+    grid-template-columns: 2fr 6fr 1fr;
     gap: 0;
     line-height: 1.25rem;
 }

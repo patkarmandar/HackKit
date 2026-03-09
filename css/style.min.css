@@ -47,8 +47,6 @@
 body {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background-color: var(--light-bg);
-    background-image: radial-gradient(circle at 1px 1px, var(--border) 1px, transparent 0);
-    background-size: 20px 20px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -774,11 +772,11 @@ header {
 }
 
 [data-theme="dark"] .results-info {
-    color: #cbd5e1;
+    color: #f1f5f9;
 }
 
 [data-theme="dark"] .results-info .text-muted {
-    color: #cbd5e1;
+    color: #f1f5f9;
 }
 
 [data-theme="dark"] .results-info strong {
@@ -847,6 +845,8 @@ header {
 
 .lists.list-view {
     grid-template-columns: 1fr;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .list-item {
@@ -866,26 +866,30 @@ header {
 }
 
 .lists.list-view .list-item {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 1.5rem;
-    padding: 1.25rem;
+    /* Same as card view - just single column */
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.95rem;
 }
 
 .lists.list-view .list-item .title {
-    min-width: 150px;
-    max-width: 200px;
-    font-size: 1rem;
+    /* Keep same as card view */
+    font-size: 0.95rem;
+    min-width: auto;
+    max-width: none;
 }
 
 .lists.list-view .list-item .description {
-    flex: 1;
+    /* Keep same as card view */
+    flex: auto;
     -webkit-line-clamp: 2;
-    margin-right: 1rem;
+    margin-right: 0;
 }
 
 .lists.list-view .list-item:hover .description {
-    -webkit-line-clamp: 3;
+    /* Expand on hover like card view */
+    -webkit-line-clamp: unset;
+    max-height: 200px;
 }
 
 .list-item::before {
@@ -940,6 +944,9 @@ header {
 .card-actions {
     display: flex;
     gap: 0.25rem;
+}
+
+.list-item .card-actions {
     opacity: 0;
     transition: opacity 0.2s;
 }
@@ -973,6 +980,16 @@ header {
     transform: scale(1.1);
     outline: 2px solid rgba(102, 126, 234, 0.3);
     outline-offset: 2px;
+}
+
+.btn-copy-url {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.list-item:hover .btn-copy-url,
+.list-item:focus-within .btn-copy-url {
+    opacity: 1;
 }
 
 .btn-favorite.active {
@@ -1316,12 +1333,13 @@ header {
 @media (max-width: 768px) {
     main { margin: 0 1rem; }
     header { padding: 0.4rem 0.75rem; }
-    .head-title { font-size: 1.2rem; }
+    .head-title { font-size: 1.5rem; }
     .badge { font-size: 0.65rem; padding: 0.3rem 0.5rem; }
     .btn-icon { width: 32px; height: 32px; }
     .search-wrapper { margin: 1rem auto 0; }
     #search { font-size: 0.85rem; padding: 0.55rem 2.5rem 0.55rem 2.25rem; }
     .search-icon { width: 38px; }
+    .keyboard-hint { display: none; }
     .filter-box { padding: 0.65rem 0.85rem; margin: 0.875rem auto 0; }
     .filter-item { margin-bottom: 0.5rem; }
     .filter-item .title { margin-bottom: 0.3rem; }

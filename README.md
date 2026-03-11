@@ -4,13 +4,9 @@
 
 [🚀 Live Demo](https://patkarmandar.github.io/HackKit) • [Features](#features) • [Quick Start](#quick-start)
 
----
-
 ## About
 
 The Hacker Kit is a comprehensive directory of cybersecurity tools, categorized by technique, category, and target. Fast search, smart filters, and zero dependencies.
-
----
 
 ## Features
 
@@ -22,8 +18,6 @@ The Hacker Kit is a comprehensive directory of cybersecurity tools, categorized 
 - 🔗 Share filtered results via URL
 - 📱 Fully responsive
 
----
-
 ## Tech Stack
 
 Pure vanilla JavaScript • No frameworks • No dependencies
@@ -31,8 +25,6 @@ Pure vanilla JavaScript • No frameworks • No dependencies
 - HTML5, CSS3, Vanilla JS
 - Bootstrap Icons (CDN)
 - LocalStorage API
-
----
 
 ## Quick Start
 
@@ -50,8 +42,6 @@ npx http-server
 open http://localhost:8000
 ```
 
----
-
 ## Project Structure
 
 ```
@@ -63,8 +53,6 @@ HackKit/
     ├── data.json
     └── tags.json
 ```
-
----
 
 ## Adding Content
 
@@ -96,13 +84,6 @@ Edit `data/tags.json`:
 }
 ```
 
-**Available Tags:**
-- **Techniques**: exploitation, reconnaissance, cryptography, etc.
-- **Categories**: web_app, network_scanner, password_cracker, etc.
-- **Targets**: web, network, mobile, cloud, etc.
-
----
-
 ## Contributing
 
 Contributions are welcome! Here's how:
@@ -113,20 +94,6 @@ Contributions are welcome! Here's how:
 
 **Guidelines:** Ensure tool is legitimate, provide accurate URLs, use appropriate tags.
 
----
-
-## License
-
-MIT License - feel free to use this project for any purpose.
-
----
-
-## Author
-
-**Mandar Patkar** • [GitHub](https://github.com/patkarmandar)
-
----
-
 ## 📮 Support
 
 Found a bug? Want a feature? Have a tool to add?
@@ -135,8 +102,6 @@ Found a bug? Want a feature? Have a tool to add?
 - 💡 [Request Feature](https://github.com/patkarmandar/HackKit/issues)
 - 🔧 [Submit Tool](https://github.com/patkarmandar/HackKit/pulls)
 
----
-
 <p align="center">
-  <sub>Made with ❤️ by <a href="https://github.com/patkarmandar">Mandar</a></sub>
+  <sub>Made with 🛡️ by <a href="https://github.com/patkarmandar">Mandar</a></sub>
 </p>

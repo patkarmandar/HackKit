@@ -787,7 +787,7 @@ header {
 /* Recently Viewed */
 .recently-viewed {
     max-width: 1400px;
-    margin: 1rem auto 0;
+    margin: 1rem auto 1.5rem;
     padding: 0.75rem 1rem;
     background: var(--card-bg);
     border: 1px solid var(--border);
